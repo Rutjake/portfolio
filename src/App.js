@@ -1,19 +1,23 @@
-import Button from 'react-bootstrap/Button';
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Image Removed
-        </p>
-        <Button variant="primary">Primary</Button>{' '}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        
+       <p>
+        Jarno
+       </p>
       </header>
+      <Container>
+        <Row>
+          <Col>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

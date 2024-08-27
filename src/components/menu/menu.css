@@ -1,4 +1,13 @@
+
 .menu_items {
     font-size: 2vh;
+}
+
+/* Hide Menu Items Small Screens */
+@media (max-width: 380px) {
+    .menu_items {
+        display: none;
+    }
+    
 }
 

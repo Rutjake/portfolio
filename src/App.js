@@ -6,17 +6,23 @@ import Menu from './components/menu/menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Menu />
-      </header>
-      <Container>
-        <Row>
-          <Col>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Container>
+      <div className="App">
+        <header className="App-header">
+          <Row>
+            <Col sm={2}>
+              <li>
+                <a href="#/home">Jarno</a>
+              </li>
+            </Col>
+            <Col sm={8}>
+              <Menu />
+            </Col>
+          </Row>
+        </header>
+
+      </div >
+    </Container>
   );
 }
 

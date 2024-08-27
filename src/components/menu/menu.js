@@ -4,9 +4,7 @@ export default function Menu() {
     return (
         <nav className="Navi">
             <ul>
-                <li>
-                    <a href="#/home">Jarno</a>
-                </li>
+               
                 <li>
                     <ul>
                         <li className="menu_items">

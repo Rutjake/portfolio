@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Button from 'react-bootstrap/Button';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
         <p>
           Image Removed
         </p>
+        <Button variant="primary">Primary</Button>{' '}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

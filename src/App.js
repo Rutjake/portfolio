@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Menu from './components/menu/menu';
 import MainPage from './Pages/main_page';
+import EduPage from './Pages/education';
 
 function App() {
   return (
@@ -22,7 +23,12 @@ function App() {
             <Col>
               <MainPage />
             </Col>
-          </Row>  
+          </Row>
+          <Row>
+            <Col>
+              <EduPage />
+            </Col>
+          </Row>    
       </Container>
   );
 }

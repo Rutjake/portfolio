@@ -4,18 +4,16 @@ export default function Menu() {
     return (
         <nav className="Navi">
             <ul>
-               
-                <li>
+                <ul>
                     <ul>
-                        <li className="menu_items">
-                            <a href="/home">Koti</a>
-                            <a href="/education">Koulutus</a>
-                            <a href="/experience">Työkokemus</a>
-                            <a href="/projects">Projectit</a>
-                            <a href="/contact">Ota Yhteyttä</a>
-                        </li>
+                        <ul className="menu_items">
+                            <a href="/home" className='menulink'>Etusivu</a>
+                            <a href="/education" className='menulink'>Koulutus</a>
+                            <a href="/projects" className='menulink'>Projektit</a>
+                            <a href="/contact" className='menulink'>Ota Yhteyttä</a>
+                        </ul>
                     </ul>
-                </li>
+                </ul>
             </ul>
         </nav>
     );

@@ -1,13 +1,22 @@
-
 .menu_items {
     font-size: 2vh;
 }
 
 /* Hide Menu Items Small Screens */
-@media (max-width: 380px) {
+@media (max-width: 600px) {
     .menu_items {
         display: none;
     }
-    
+
 }
 
+.menulink {
+    float: left;
+    display: block;
+    color: #ffffff;
+    font-size: 16pt;
+    padding: 0.5vw;
+    padding-right: 4vw;
+    text-decoration: none;
+    padding-left: 10px;
+}

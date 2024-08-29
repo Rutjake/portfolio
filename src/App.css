@@ -2,18 +2,7 @@
   background-color: rgb(252, 252, 252);
   font-family: 'Barlow Condensed', sans-serif;
 }
-/* Not In Use Anymore 
-.App-header {
-  background: linear-gradient(to bottom, rgb(5, 34, 51), rgb(9, 58, 87));
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-*/
+
 .mainText {
   background-color: rgba(214, 214, 214, 0.75);
   padding-inline: 5%;

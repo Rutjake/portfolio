@@ -13,7 +13,7 @@ export default function NavDesktop() {
                 <h3 className="nav_title">JARNO</h3>
             </Col>
             <Col  sm={8}>
-                <ul className="hidden desktop_links">
+                <ul className="hidden desktop_navList">
 
                     {routes.map((route, index) => {
                         const { Icon, href, title } = route;
@@ -24,7 +24,7 @@ export default function NavDesktop() {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <a href={href} className="desktop_navList"
+                                <a href={href} className="desktop_links"
                                 >
                                     <FontAwesomeIcon icon={Icon} className="desktop_icon" />
                                     {title}

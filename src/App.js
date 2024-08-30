@@ -10,17 +10,15 @@ import NavMobile from './components/nav-mobile';
 function App() {
   return (
     <Container fluid className='App'>
-      <Row>
-        
-          <nav className="navigation ">
+      <Row>  
+          <nav className="navigation">
             <MediaQuery query="(min-width: 700px)">
               <NavDesktop />
             </MediaQuery>
             <MediaQuery query="(max-width: 700px)">
               <NavMobile />
             </MediaQuery>
-          </nav>
-        
+          </nav> 
       </Row>
       <Row>
         <Col>

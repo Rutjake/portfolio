@@ -9,22 +9,24 @@
     padding-top: 0.5vw;
 }
 
-.desktop_links {
+.desktop_navList {
     gap: 2vw;
     display: flex;
-    list-style-type: none;
     justify-content: center;
+    list-style-type: none;
 }
 
-.desktop_navList {
-    gap: 1vw;
-    font-size: 1.6vw;
+.desktop_links {
+    gap: 0.5vw;
+    font-size: 1.5vw;
     display: flex;
     padding-top: 0.5vw;
+    color: rgb(45, 93, 121);
 }
 
 .nav_title {
     padding: 0.5vw;
+    padding-left: 1vw;
     font-size: 3vw;
     font-weight: bold;
 }

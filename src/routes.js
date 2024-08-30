@@ -2,22 +2,22 @@ import { faHouse, faMortarBoard, faDisplay, faEnvelope } from '@fortawesome/free
 
 export const routes = [
     {
-        title: "Etusivu",
+        title: "ETUSIVU",
         href: "#",
         Icon: faHouse,
     },
     {
-        title: "Koulutus",
+        title: "KOULUTUS",
         href: "#",
         Icon: faMortarBoard,
     },
     {
-        title: "Projektit",
+        title: "PROJEKTIT",
         href: "#",
         Icon: faDisplay,
     },
     {
-        title: "Ota Yhteyttä",
+        title: "OTA YHTEYTTÄ",
         href: "#",
         Icon: faEnvelope,
     },

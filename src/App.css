@@ -1,4 +1,7 @@
 .App {
+  /* background-image: url('../images/CodeBackWhite.jpg'); */
+  background-size: cover;
+  height: 100vh;;
   background-color: rgb(252, 252, 252);
   font-family: 'Barlow Condensed', sans-serif;
 }
@@ -13,6 +16,7 @@
   border-radius: 10px;
   margin: 2vh;
 }
+
 @media (max-width: 768px) {
   .mainText {
     margin-top: 2vh;
@@ -20,9 +24,11 @@
     margin-right: auto;
   }
 }
+
 .subTitle {
   color: rgb(45, 93, 121);
 }
+
 .underText {
   text-align: center;
   padding-bottom: 1vh;

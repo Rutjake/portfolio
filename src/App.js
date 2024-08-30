@@ -11,16 +11,16 @@ function App() {
   return (
     <Container fluid className='App'>
       <Row>
-        <Col>
+        
           <nav className="navigation ">
-            <MediaQuery query="(min-width: 600px)">
+            <MediaQuery query="(min-width: 700px)">
               <NavDesktop />
             </MediaQuery>
-            <MediaQuery query="(max-width: 600px)">
+            <MediaQuery query="(max-width: 700px)">
               <NavMobile />
             </MediaQuery>
           </nav>
-        </Col>
+        
       </Row>
       <Row>
         <Col>

@@ -7,6 +7,7 @@ import { Spin as Hamburger } from "hamburger-react";
 import { routes } from "../routes";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./nav-mobile.css";
+import { Col } from 'react-bootstrap';
 
 export default function NavMobile() {
     const [isOpen, setOpen] = useState(false);
@@ -15,8 +16,9 @@ export default function NavMobile() {
     useClickAway(ref, () => setOpen(false));
 
     return (
-        <div ref={ref}>
+        <Col ref={ref}>
             <div className='burger_div'>
+                <h3 className="mobile_title">JARNO</h3>
                 <Hamburger label="Valikko" color="rgb(45, 93, 121)" rounded toggled={isOpen} size={20} toggle={setOpen} />
             </div>
             <div className='nav_content'>
@@ -39,7 +41,7 @@ export default function NavMobile() {
                                             exit={{ opacity: 0 }}
                                             transition={{
                                                 type: "spring",
-                                                stiffness: 260,
+                                                stiffness: 250,
                                                 damping: 20,
                                                 delay: 0.1 + idx / 10,
                                             }}
@@ -52,8 +54,8 @@ export default function NavMobile() {
                                                 href={href}
                                             >
                                                 <span className="">{title}</span>
-                                                
-                                                <FontAwesomeIcon icon={Icon} className='mobile_icon' />   
+
+                                                <FontAwesomeIcon icon={Icon} className='mobile_icon' />
                                             </a>
                                         </motion.li>
                                     );
@@ -63,6 +65,6 @@ export default function NavMobile() {
                     )}
                 </AnimatePresence>
             </div>
-        </div>
+        </Col>
     );
 };

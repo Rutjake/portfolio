@@ -12,7 +12,7 @@ function App() {
     <Container fluid className='App'>
       <Row>
         <Col>
-          <nav className="navigation">
+          <nav className="navigation ">
             <MediaQuery query="(min-width: 600px)">
               <NavDesktop />
             </MediaQuery>

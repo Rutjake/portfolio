@@ -1,4 +1,22 @@
-/* Remove Dots from list */
+/* Remove Dots From List */
 .mobile_navList {
+    margin-left: -30px;
+    margin-bottom: 1px;
+    border-radius: 5px;
     list-style-type: none;
+    padding: 1vh;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile_link_div {
+    padding-top: 0;
+    font-size: 2vh;
+}
+
+.burger_div {
+    display: flex;
+    justify-content: right;
+}
+.mobile_link {
+    padding: 3%;
 }

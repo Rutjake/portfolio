@@ -15,51 +15,54 @@ export default function NavMobile() {
     useClickAway(ref, () => setOpen(false));
 
     return (
-        <div ref={ref} className="lg:hidden">
-            <Hamburger label="Valikko" color="rgb(45, 93, 121)" rounded toggled={isOpen} size={20} toggle={setOpen} />
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2 }}
-                        className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-neutral-950 border-b border-b-white/20">
-                        <ul className="grid gap-2">
-                            {routes.map((route, idx) => {
-                                const { Icon, href, title } = route;
+        <div ref={ref}>
+            <div className='burger_div'>
+                <Hamburger label="Valikko" color="rgb(45, 93, 121)" rounded toggled={isOpen} size={20} toggle={setOpen} />
+            </div>
+            <div className='nav_content'>
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="mobile_link_div">
+                            <ul className="">
+                                {routes.map((route, idx) => {
+                                    const { Icon, href, title } = route;
 
-                                return (
-                                    <motion.li
-                                        initial={{ opacity: 0, opacity: 0 }}
-                                        animate={{ scale: 1, opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ 
-                                            type: "spring",
-                                            stiffness: 260,
-                                            damping: 20,
-                                            delay: 0.1 + idx / 10,
-                                         }}
-                                        key={title}
-                                        className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700 mobile_navList"
-                                    >
-                                        <a
-                                            onClick={() => setOpen((prev) => !prev)}
-                                            className={
-                                                "flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950"
-                                            }
-                                            href={href}
+                                    return (
+                                        <motion.li
+                                            initial={{ scale: 0, opacity: 0 }}
+                                            animate={{ scale: 1, opacity: 1 }}
+                                            exit={{ opacity: 0 }}
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 260,
+                                                damping: 20,
+                                                delay: 0.1 + idx / 10,
+                                            }}
+                                            key={title}
+                                            className="mobile_navList"
                                         >
-                                            <span className="flex gap-1 text-lg">{title}</span>
-                                            <FontAwesomeIcon icon={Icon} className='text-xl' />
-                                        </a>
-                                    </motion.li>
-                                );
-                            })}
-                        </ul>
-                    </motion.div>
-                )}
-            </AnimatePresence>
+                                            <a
+                                                onClick={() => setOpen((prev) => !prev)}
+                                                className={"mobile_link"}
+                                                href={href}
+                                            >
+                                                <span className="">{title}</span>
+                                                
+                                                <FontAwesomeIcon icon={Icon} className='mobile_icon' />   
+                                            </a>
+                                        </motion.li>
+                                    );
+                                })}
+                            </ul>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
         </div>
     );
 };

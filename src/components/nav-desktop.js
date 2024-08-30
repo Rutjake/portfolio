@@ -5,13 +5,13 @@ import "./nav-desktop.css";
 
 export default function NavDesktop () {
     return (
-        <ul className="hidden gap-5 text-sm desktop_links">
+        <ul className="hidden desktop_links">
              <h3 className="nav_title">JARNO</h3>
             {routes.map((route, index) => {
                 const { Icon, href, title } = route;
                 return (
                     <li key={index}>
-                        <a href={href} className="gap-1 desktop_navList"
+                        <a href={href} className="desktop_navList"
                         >
                                <FontAwesomeIcon icon={Icon} className="desktop_icon" />
                             {title}

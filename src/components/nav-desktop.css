@@ -1,8 +1,10 @@
 .desktop_icon {
     margin-right: 0.5vh;
+    padding-top: 0.5vh;
 }
 
 .desktop_links {
+    gap: 5vh;
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -10,6 +12,7 @@
 }
 
 .desktop_navList {
+    gap: 1vh;
     font-size: 2vh;
     display: flex;
     padding-top: 0.5vh;

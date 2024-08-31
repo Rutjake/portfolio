@@ -1,19 +1,22 @@
 import { faHouse, faMortarBoard, faDisplay, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+
+
 export const routes = [
     {
         title: "ETUSIVU",
-        href: "#",
+        path: "/",
         Icon: faHouse,
     },
     {
         title: "KOULUTUS",
-        href: "#",
+        path: "/education",
         Icon: faMortarBoard,
     },
     {
         title: "PROJEKTIT",
         href: "#",
+
         Icon: faDisplay,
     },
     {

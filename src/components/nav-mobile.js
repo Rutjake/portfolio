@@ -8,6 +8,7 @@ import { routes } from "../routes";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./nav-mobile.css";
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function NavMobile() {
     const [isOpen, setOpen] = useState(false);
@@ -32,7 +33,7 @@ export default function NavMobile() {
                             className="mobile_link_div">
                             <ul className="">
                                 {routes.map((route, idx) => {
-                                    const { Icon, href, title } = route;
+                                    const { Icon, path, title } = route;
 
                                     return (
                                         <motion.li
@@ -48,15 +49,12 @@ export default function NavMobile() {
                                             key={title}
                                             className="mobile_navList"
                                         >
-                                            <a
-                                                onClick={() => setOpen((prev) => !prev)}
-                                                className={"mobile_link"}
-                                                href={href}
-                                            >
+                                            <Link to={path} onClick={() => setOpen((prev) => !prev)} className="mobile_link">
+
                                                 <span className="">{title}</span>
 
                                                 <FontAwesomeIcon icon={Icon} className='mobile_icon' />
-                                            </a>
+                                            </Link>
                                         </motion.li>
                                     );
                                 })}

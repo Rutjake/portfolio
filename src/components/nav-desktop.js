@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./nav-desktop.css";
 import { motion } from 'framer-motion';
 import { Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+
 
 export default function NavDesktop() {
     return (
@@ -12,11 +14,11 @@ export default function NavDesktop() {
             <Col sm={2}>
                 <h3 className="nav_title">JARNO</h3>
             </Col>
-            <Col  sm={8}>
+            <Col sm={8}>
                 <ul className="hidden desktop_navList">
 
                     {routes.map((route, index) => {
-                        const { Icon, href, title } = route;
+                        const { Icon, path, title } = route;
                         return (
                             <motion.li
                                 key={index}
@@ -24,11 +26,10 @@ export default function NavDesktop() {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6 }}
                             >
-                                <a href={href} className="desktop_links"
-                                >
+                                <Link to={path} className="desktop-links">
                                     <FontAwesomeIcon icon={Icon} className="desktop_icon" />
                                     {title}
-                                </a>
+                                </Link>
                             </motion.li>
                         );
                     })}

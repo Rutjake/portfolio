@@ -1,13 +1,12 @@
 .App {
   /* background-image: url('../images/CodeBackWhite.jpg'); */
   background-size: cover;
-  height: 100vh;
   background-color: rgb(252, 252, 252);
   font-family: 'Barlow Condensed', sans-serif;
+  width: 100%;
 }
-
 .mainText {
-  background-color: rgba(214, 214, 214, 0.75);
+  /*background-color: rgba(214, 214, 214, 0.75); */
   padding-inline: 5%;
   font-size: 2vw;
   color: #000000;
@@ -34,6 +33,6 @@
   font-size: 3vw;
   text-align: center;
   padding-bottom: 1vw;
-  padding-top: 1vw;;
+  padding-top: 1vw;
   color: rgb(45, 93, 121);
 }

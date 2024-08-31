@@ -1,7 +1,10 @@
+import React from 'react';
 import '../App.css';
+
 
 export default function EduPage() {
     return (
+       
         <div className='mainText'>
             <h3 className='subTitle'>Koulutus</h3>
             <p>

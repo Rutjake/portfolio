@@ -34,7 +34,7 @@ import m365 from "./logos/m365.png"
 
 export default function Logos() {
   const variants = {
-    hidden: { x: '100vw', opacity: 0},
+    hidden: { x: '-100vw', opacity: 0},
     visible: {x: 0, opacity: 1, transition: { duration: 1.5, delay: 0.6 }}
   };
 

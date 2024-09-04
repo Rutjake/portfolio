@@ -1,6 +1,10 @@
 import React from 'react';
 import "./logos.css";
 import { Row, Col } from 'react-bootstrap';
+
+import { motion } from 'framer-motion';
+
+/* Logo Images */
 import Kali from "./logos/kali-dragon.png";
 import Hacker from "./logos/ethical-hacker.png";
 import Pyth from "./logos/python-logo.png";
@@ -11,10 +15,20 @@ import Html from "./logos/HTML5.png";
 import Css from "./logos/CSS.png";
 import Sele from "./logos/selenium.png"
 import Robot from "./logos/Robot-framework.png"
-
+import Figma from "./logos/figma.png"
 
 export default function Logos() {
+  const variants = {
+    hidden: { x: '100vw', opacity: 0},
+    visible: {x: 0, opacity: 1, transition: { duration: 1.5, delay: 0.6 }}
+  };
+
   return (
+    <motion.div
+    initial="hidden"
+    animate="visible"
+    variants={variants}
+    >
     <div>
       <Row>
         <Col className="text-center">
@@ -43,7 +57,9 @@ export default function Logos() {
         </Col>
         <Col className="text-center">
           <h4 className="smallTitle">UX Design:</h4>
-          <p>Tutkimus Rautalankamallit Figma</p>
+          <img src={Figma} alt="Figma" className='logo' />
+          <p>Figma</p>
+          
         </Col>
       </Row>
 
@@ -55,5 +71,6 @@ export default function Logos() {
         </Col>
       </Row>
     </div>
+    </motion.div>
   );
 }

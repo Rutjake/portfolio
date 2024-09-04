@@ -5,6 +5,7 @@
   font-family: 'Barlow Condensed', sans-serif;
   width: 100%;
 }
+
 .mainText {
   /*background-color: rgba(214, 214, 214, 0.75); */
   padding-inline: 5%;
@@ -25,8 +26,7 @@
 }
 
 .subTitle {
-  font-size: 3vw;
-  color: rgb(45, 93, 121);
+  color: rgb(212, 120, 0);
 }
 
 .underText {
@@ -34,5 +34,17 @@
   text-align: center;
   padding-bottom: 1vw;
   padding-top: 1vw;
+  color: rgb(212, 120, 0);
+}
+
+.smallTitle {
+  color: rgb(212, 120, 0);
+}
+
+a:visited {
   color: rgb(45, 93, 121);
+}
+
+a:hover {
+  color: rgb(212, 120, 0);
 }

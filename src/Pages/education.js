@@ -1,10 +1,11 @@
 import React from 'react';
 import '../App.css';
+import { Row, Col } from 'react-bootstrap';
 
 
 export default function EduPage() {
     return (
-       
+
         <div className='mainText'>
             <h3 className='subTitle'>Koulutus</h3>
             <p>
@@ -18,12 +19,18 @@ export default function EduPage() {
                 - Tietokoneasentajan ammattitutkinto 2003.
             </p>
             <h4 className='subTitle'>Sertifikaatit</h4>
-            <p>
-                - Cisco verified Ethical Hacker (<a href="sertit/Ethical_Hacker_Badge20240826-7-jk2f0z.pdf" alt="Lataa PDF">PDF</a>)
-            </p>
-            <p>
-                - UX Design Process: Empathize, Define, and Ideate (<a href="sertit/Coursera_uxdesign.pdf" alt="Lataa PDF">PDF</a>)
-            </p>
+            <Row className="justify-content-md-center">
+                <Col>
+                    <p>
+                        - Cisco verified Ethical Hacker (<a href="sertit/Ethical_Hacker_Badge20240826-7-jk2f0z.pdf" alt="Lataa PDF">PDF</a>)
+                    </p>
+                </Col>
+                <Col>
+                    <p>
+                        - UX Design Process: Empathize, Define, and Ideate (<a href="sertit/Coursera_uxdesign.pdf" alt="Lataa PDF">PDF</a>)
+                    </p>
+                </Col>
+            </Row>
             <p>
                 - Robocorp Automation Developer (<a href="sertit/Robocorp_cert_2022.pdf" alt="Lataa PDF">PDF</a>)
             </p>

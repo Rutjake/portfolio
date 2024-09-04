@@ -26,6 +26,7 @@ export default function NavDesktop() {
                                 initial={{ opacity: 0, x: '200%' }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 1.5 }}
+                                
                             >
                                 <Link to={path} className="desktop-links">
                                     <FontAwesomeIcon icon={Icon} className="desktop_icon" />

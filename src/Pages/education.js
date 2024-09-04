@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { Row, Col } from 'react-bootstrap';
+import Sertis from '../components/sertificates';
+
 
 
 export default function EduPage() {
@@ -19,21 +20,7 @@ export default function EduPage() {
                 - Tietokoneasentajan ammattitutkinto 2003.
             </p>
             <h4 className='subTitle'>Sertifikaatit</h4>
-            <Row className="justify-content-md-center">
-                <Col>
-                    <p>
-                        - Cisco verified Ethical Hacker (<a href="sertit/Ethical_Hacker_Badge20240826-7-jk2f0z.pdf" alt="Lataa PDF">PDF</a>)
-                    </p>
-                </Col>
-                <Col>
-                    <p>
-                        - UX Design Process: Empathize, Define, and Ideate (<a href="sertit/Coursera_uxdesign.pdf" alt="Lataa PDF">PDF</a>)
-                    </p>
-                </Col>
-            </Row>
-            <p>
-                - Robocorp Automation Developer (<a href="sertit/Robocorp_cert_2022.pdf" alt="Lataa PDF">PDF</a>)
-            </p>
+            <Sertis />
             <p>
                 Opintoni ovat painottuneet käyttäjäkeskeiseen suunnitteluun sekä ohjelmointiin. Olen tehnyt erilaisissa
                 kouluprojekteissa digitaalisen palvelujen käyttäjäkeskeistä suunnittelua ja ohjelmistotuotteen määrittelyä.

@@ -12,6 +12,7 @@ import MainPage from './Pages/main_page';
 import NavDesktop from './components/nav-desktop';
 import NavMobile from './components/nav-mobile';
 import EduPage from './Pages/education';
+import Projects from './Pages/projects';
 
 function App() {
   return (
@@ -46,6 +47,14 @@ function App() {
             transition={{ duration: 1.5 }}
           >
             <EduPage />
+          </motion.div>} />
+          <Route path="/projects" element={<motion.div
+            initial={{ x: '-100vw', opacity: 0}}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: '100vw', opacity:0 }}
+            transition={{ duration: 1.5 }}
+          >
+            <Projects />
           </motion.div>} />
           
         </Routes>

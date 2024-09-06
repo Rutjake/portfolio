@@ -9,7 +9,6 @@
 .mainText {
   /*background-color: rgba(214, 214, 214, 0.75); */
   padding-inline: 5%;
-  font-size: 2vw;
   color: #000000;
   padding-top: 4vw;
   padding-bottom: 4vw;
@@ -30,7 +29,6 @@
 }
 
 .underText {
-  font-size: 3vw;
   text-align: center;
   padding-bottom: 1vw;
   padding-top: 1vw;

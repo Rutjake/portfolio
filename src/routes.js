@@ -15,8 +15,7 @@ export const routes = [
     },
     {
         title: "PROJEKTIT",
-        href: "#",
-
+        path: "/projects",
         Icon: faDisplay,
     },
     {

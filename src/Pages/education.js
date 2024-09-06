@@ -11,19 +11,18 @@ export default function EduPage() {
         <div className='mainText'>
             <h3 className='subTitle'>Koulutus</h3>
             <p>
-                - Tietojenkäsittelyn IT-Tradenomi. Digitaalisten palveluiden kehittäjä. 2021 alkaen.
-                Arvioitu valmistuminen 2025.
+                Tietojenkäsittelyn IT-Tradenomi. Digitaalisten palveluiden kehittäjä. 2021 alkaen.
             </p>
             <p>
-                - Rakennusalan perustutkinto. Talonrakentaja 2009.
+                Rakennusalan perustutkinto. Talonrakentaja 2009.
             </p>
             <p>
-                - Tietokoneasentajan ammattitutkinto 2003.
+                Tietokoneasentajan ammattitutkinto 2003.
             </p>
             <h4 className='subTitle'>Sertifikaatit</h4>
             <Sertis />
 
-            <h3 className='subTitle'>Taidot:</h3>
+            <h4 className='subTitle'>Taidot:</h4>
 
             <Logos />
 

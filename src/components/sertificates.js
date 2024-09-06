@@ -26,8 +26,8 @@ export default function Sertis() {
             variants={variants}
         >
             <div>
-                <Row className="justify-content-md-center">
-                    <Col className="text-center">
+                <Row>
+                    <Col xs={12} md={6} className="center-text">
                         <p>
                             <img src={Hacker} alt="Ethical Hacker" className='logo' />
                             Cisco verified Ethical Hacker
@@ -37,12 +37,11 @@ export default function Sertis() {
                             Robocorp Automation Developer
                         </p>
                     </Col>
-                    <Col className="text-center">
+                    <Col xs={12} md={6} className="center-text">
                         <p>
                             <img src={Googl} alt="Google Coursera" className='logo' />
                             Google Coursera: UX Design Process
                         </p>
-
                     </Col>
                 </Row>
             </div>

@@ -11,3 +11,9 @@
     padding: 1vh;
   }
 }
+@media screen and (min-width: 991px) {
+  .center-text {
+    text-align: center;
+  }
+  
+}

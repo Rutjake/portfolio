@@ -4,9 +4,21 @@ import './projectCards.css';
 import { Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
-export default function Cards() {
-    return (
+import { motion } from 'framer-motion';
 
+export default function Cards() {
+
+    const variants = {
+        hidden: { x: '100vw', opacity: 0 },
+        visible: { x: 0, opacity: 1, transition: { duration: 1 } }
+    };
+
+    return (
+<motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+        >
         <div>
             <Row className="justify-content-center">
                 <Col xs={12} md={6}>
@@ -113,5 +125,6 @@ export default function Cards() {
                 </Col>
             </Row>
         </div>
+        </motion.div>
     )
 }

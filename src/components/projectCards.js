@@ -8,12 +8,12 @@ export default function Cards() {
     return (
 
         <div>
-            <Row>
-                <Col xs={12} md={6} className="center-card">
-                    <Card style={{ width: '20rem', margin: '1vw'}}>
+            <Row className="justify-content-center">
+                <Col xs={12} md={6}>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                            <Card.Title>Team Viilee App</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
@@ -22,10 +22,10 @@ export default function Cards() {
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '20rem', margin: '1vw'}}>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                            <Card.Title>Ruokaostosten hintavertailusivusto</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
@@ -35,11 +35,11 @@ export default function Cards() {
                     </Card>
 
                 </Col>
-                <Col xs={12} md={6} className="center-card">
-                    <Card style={{ width: '20rem', margin: '1vw' }}>
+                <Col xs={12} md={6}>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                            <Card.Title>JaggePokka</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.
@@ -47,10 +47,61 @@ export default function Cards() {
                             <Card.Link href="#">Card Link</Card.Link>
                         </Card.Body>
                     </Card>
-                    <Card style={{ width: '20rem', margin: '1vw' }}>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                            <Card.Title>Sää Nyt</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                        </Card.Body>
+                    </Card>
+
+                </Col>
+                <Col xs={12} md={6}>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>MatikkaPeli</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                        </Card.Body>
+                    </Card>
+
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Turvallisuus websivu</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                        </Card.Body>
+                    </Card>
+
+                </Col>
+                <Col xs={12} md={6}>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Elokuvat pääkaupunkiseudulla tänään</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                        </Card.Body>
+                    </Card>
+                    <Card className='card-style'>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Tämä Verkkosivu</Card.Title>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
                                 bulk of the card's content.

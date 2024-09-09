@@ -4,6 +4,7 @@
   background-color: rgb(252, 252, 252);
   font-family: 'Barlow Condensed', sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .mainText {

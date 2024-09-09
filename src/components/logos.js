@@ -33,118 +33,138 @@ import m365 from "./logos/m365.png"
 
 
 export default function Logos() {
-  const variants = {
-    hidden: { x: '-100vw', opacity: 0 },
-    visible: { x: 0, opacity: 1, transition: { duration: 1.5, delay: 0.6 } }
+  /* Animation Container */
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
+  /* First Animation Variable */
+  const variantsLeft = {
+    hidden: { x: '-100vw' },
+    visible: { x: 0, transition: { duration: 1.5, delay: 0.6 } }
+  };
+  /* Second Animation Variable */
+  const variantsRight = {
+    hidden: { x: '100vw' },
+    visible: { x: 0, transition: { duration: 1.5, delay: 1 } }
   };
 
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      variants={variants}
+      variants={containerVariants}
     >
-      <div>
-        <Row>
-          <Col className="text-center">
-            <h5 className="smallTitle">Cyber Security:</h5>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Kali Linux</Tooltip>}>
-              <img src={Kali} alt="Kali Linux" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Ethical Hacker</Tooltip>}>
-              <img src={Hacker} alt="Ethical Hacker" className='logo' />
-            </OverlayTrigger>
-            <p className='smallText'>Kali Linux / Ethical Hacker</p>
-          </Col>
-          <Col className="text-center">
-            <h5 className="smallTitle">Developing:</h5>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Python</Tooltip>}>
-              <img src={Pyth} alt="Python" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">JavaScript</Tooltip>}>
-              <img src={JavaS} alt="Javascript" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">C</Tooltip>}>
-              <img src={Thec} alt="The C" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">C++</Tooltip>}>
-              <img src={CplusPlus} alt="C ++" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
-              <img src={Html} alt="HTML5" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">CSS</Tooltip>}>
-              <img src={Css} alt="CSS" className='logo' />
-            </OverlayTrigger>
-            <p>Python, Javascript, C, C++, HTML5, CSS</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col className="text-center">
-            <h5 className="smallTitle">UX Design:</h5>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">UX-Design Process</Tooltip>}>
-              <img src={Ux} alt="UX Design Process: Empathize, Define,
+      <motion.div
+        variants={variantsLeft}
+      >
+        <div>
+          <Row>
+            <Col className="text-center">
+              <h5 className="smallTitle">Cyber Security:</h5>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Kali Linux</Tooltip>}>
+                <img src={Kali} alt="Kali Linux" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Ethical Hacker</Tooltip>}>
+                <img src={Hacker} alt="Ethical Hacker" className='logo' />
+              </OverlayTrigger>
+              <p className='smallText'>Kali Linux / Ethical Hacker</p>
+            </Col>
+            <Col className="text-center">
+              <h5 className="smallTitle">Developing:</h5>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Python</Tooltip>}>
+                <img src={Pyth} alt="Python" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">JavaScript</Tooltip>}>
+                <img src={JavaS} alt="Javascript" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">C</Tooltip>}>
+                <img src={Thec} alt="The C" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">C++</Tooltip>}>
+                <img src={CplusPlus} alt="C ++" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
+                <img src={Html} alt="HTML5" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">CSS</Tooltip>}>
+                <img src={Css} alt="CSS" className='logo' />
+              </OverlayTrigger>
+              <p>Python, Javascript, C, C++, HTML5, CSS</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="text-center">
+              <h5 className="smallTitle">UX Design:</h5>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">UX-Design Process</Tooltip>}>
+                <img src={Ux} alt="UX Design Process: Empathize, Define,
  and Ideate" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Figma</Tooltip>}>
-              <img src={Figma} alt="Figma" className='logo' />
-            </OverlayTrigger>
-            <p>UX Design Process, Figma</p>
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Figma</Tooltip>}>
+                <img src={Figma} alt="Figma" className='logo' />
+              </OverlayTrigger>
+              <p>UX Design Process, Figma</p>
 
-          </Col>
-          <Col className="text-center">
-            <h5 className="smallTitle">Automaatio/ Ohjelmistotestaus RPA</h5>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Selenium</Tooltip>}>
-              <img src={Sele} alt="Selenium" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Robot Framework</Tooltip>}>
-              <img src={Robot} alt="Robot Framework" className='logo' />
-            </OverlayTrigger>
-            <p>Selenium, Robot Framework</p>
-          </Col>
-        </Row>
-
-        <Row>
-          <Col className="text-center">
-            <h5 className="smallTitle">Muut taidot:</h5>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Git</Tooltip>}>
-              <img src={Git} alt="Git" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">GitHub</Tooltip>}>
-              <img src={GitHub} alt="GitHub" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">React</Tooltip>}>
-              <img src={R_react} alt="Rect" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Bootstrap</Tooltip>}>
-              <img src={B_boost} alt="Bootstrap" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Kivy</Tooltip>}>
-              <img src={K_kivy} alt="Kivy" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">MySQL</Tooltip>}>
-              <img src={Sql} alt="MySQL" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Miro</Tooltip>}>
-              <img src={Miro} alt="Miro" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Jira</Tooltip>}>
-              <img src={Jira} alt="Jira" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">DevOps</Tooltip>}>
-              <img src={DevOps} alt="DevOps" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Scrum</Tooltip>}>
-              <img src={Scrum} alt="Scrum" className='logo' />
-            </OverlayTrigger>
-            <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">m365</Tooltip>}>
-              <img src={m365} alt="Microsoft 365" className='logo' />
-            </OverlayTrigger>
-            <p>Git/GitHub, React, Bootstrap, Kivy, MySQL, Miro/Jira, DevOps, Scrum, m365
-            </p>
-          </Col>
-        </Row>
-      </div>
+            </Col>
+            <Col className="text-center">
+              <h5 className="smallTitle">Automaatio/ Ohjelmistotestaus RPA</h5>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Selenium</Tooltip>}>
+                <img src={Sele} alt="Selenium" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Robot Framework</Tooltip>}>
+                <img src={Robot} alt="Robot Framework" className='logo' />
+              </OverlayTrigger>
+              <p>Selenium, Robot Framework</p>
+            </Col>
+          </Row>
+        </div>
+      </motion.div>
+      <motion.div
+        variants={variantsRight}
+      >
+        <div>
+          <Row>
+            <Col className="text-center">
+              <h5 className="smallTitle">Muut taidot:</h5>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Git</Tooltip>}>
+                <img src={Git} alt="Git" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">GitHub</Tooltip>}>
+                <img src={GitHub} alt="GitHub" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">React</Tooltip>}>
+                <img src={R_react} alt="Rect" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Bootstrap</Tooltip>}>
+                <img src={B_boost} alt="Bootstrap" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Kivy</Tooltip>}>
+                <img src={K_kivy} alt="Kivy" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">MySQL</Tooltip>}>
+                <img src={Sql} alt="MySQL" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Miro</Tooltip>}>
+                <img src={Miro} alt="Miro" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Jira</Tooltip>}>
+                <img src={Jira} alt="Jira" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">DevOps</Tooltip>}>
+                <img src={DevOps} alt="DevOps" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Scrum</Tooltip>}>
+                <img src={Scrum} alt="Scrum" className='logo' />
+              </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">m365</Tooltip>}>
+                <img src={m365} alt="Microsoft 365" className='logo' />
+              </OverlayTrigger>
+              <p>Git/GitHub, React, Bootstrap, Kivy, MySQL, Miro/Jira, DevOps, Scrum, m365
+              </p>
+            </Col>
+          </Row>
+        </div>
+      </motion.div>
     </motion.div>
   );
 }

@@ -15,7 +15,7 @@ export default function Sertis() {
 
     const variants = {
         hidden: { x: '100vw', opacity: 0 },
-        visible: { x: 0, opacity: 1, transition: { duration: 1.5, delay: 0.6 } }
+        visible: { x: 0, opacity: 1, transition: { duration: 1, delay: 0.6 } }
     };
 
     return (

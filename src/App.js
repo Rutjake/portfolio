@@ -6,8 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import MediaQuery from 'react-responsive';
 
-import { motion } from 'framer-motion';
-
 import MainPage from './Pages/main_page';
 import NavDesktop from './components/nav-desktop';
 import NavMobile from './components/nav-mobile';

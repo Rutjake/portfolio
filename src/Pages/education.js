@@ -21,7 +21,7 @@ export default function EduPage() {
             <div className='mainText'>
                 <h3 className='subTitle'>Koulutus</h3>
                 <p>
-                    Tietojenkäsittelyn IT-Tradenomi. Digitaalisten palveluiden kehittäjä.
+                    Tietojenkäsittelyn IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut 2024.
                 </p>
                 <p>
                     Rakennusalan perustutkinto. Talonrakentaja.

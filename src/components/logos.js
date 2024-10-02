@@ -45,8 +45,8 @@ export default function Logos() {
   };
   /* Second Animation Variable */
   const variantsRight = {
-    hidden: { x: '100vw' },
-    visible: { x: 0, transition: { duration: 1.5, delay: 1 } }
+    hidden: { x: '100vw', opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 1.5, delay: 1 } }
   };
 
   return (

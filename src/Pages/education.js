@@ -24,6 +24,9 @@ export default function EduPage() {
                     Tietojenkäsittelyn IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut 2024.
                 </p>
                 <p>
+                Opinnäytetyö: Digitaalisen palvelun käyttäjäpolun kehittäminen. Design Sprint.
+                </p>
+                <p>
                     Rakennusalan perustutkinto. Talonrakentaja.
                 </p>
                 <p>

@@ -100,7 +100,6 @@ export default function Cards() {
                                             Lue lisää
                                         </Button>
                                     </Col>
-
                                 </Row>
                             </Card.Body>
                         </Card>

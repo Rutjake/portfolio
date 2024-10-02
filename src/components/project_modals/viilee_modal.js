@@ -58,7 +58,7 @@ export default function Viilee_modal(props) {
                 <img src={viilee_valmentaja} alt="Valmentajan näkymä" className='project_images' />
                 <p className='modal_p'>
                     Valmentajan näkymä on lähes samanlainen kuin urheilijan, mutta valmentaja tarvitsee muutaman ominaisuuden enemmän.
-                    Valmentaja voi luoda urheilijalle joko uuden tai muokata olemassa olevaa harjoitusohjelmaa. 
+                    Valmentaja voi luoda urheilijalle joko uuden tai muokata olemassa olevaa harjoitusohjelmaa.
                     Kun valmentaja haluaa tehdä uuden harjoitusohjelman, niin hän valitsee alasvetovalikosta urheilijan jolle kyseinen harjoitusohjelma tehdään.
                     Samoin menetellään myös kun halutaan tarkastella olemassa olevaa ohjelmaa.
                 </p>
@@ -68,7 +68,7 @@ export default function Viilee_modal(props) {
                 <img src={viilee_ohjelma} alt="Urheilijan harjoitusohjelma" className='project_images' />
                 <p className='modal_p'>
                     Urheilijan harjoitusohjelma tulostuu taulukkona, jolloin se on hyvin selkeä ja helppo tulkita.
-                    Urheilija voi lisätä kuvauksen kullekkin päivälle "Tehty" sarakkeeseen, jolloin valmentajan, 
+                    Urheilija voi lisätä kuvauksen kullekkin päivälle "Tehty" sarakkeeseen, jolloin valmentajan,
                     kuin myös urheilijan on helppo seurata ohjelmaa.
                 </p>
                 <h5 className='modal_subTitle'>
@@ -76,7 +76,7 @@ export default function Viilee_modal(props) {
                 </h5>
                 <img src={viilee_harj_kuvaus} alt="Harjoituksen kuvaus" className='project_images' />
                 <p className='modal_p'>
-                    Jos harjoituksen kuvaus ei mahdu kokonaisena taulukko näkymään, voi urheilija klikata sitä, 
+                    Jos harjoituksen kuvaus ei mahdu kokonaisena taulukko näkymään, voi urheilija klikata sitä,
                     jolloin aukeaa uusi ikkuna josta urheilija näkee harjoituksen kuvauksen kokonaisuudessaan.
                     Myös valmentaja voi avata urheilijan kommentit uuteen ikkunaan.
                 </p>
@@ -85,7 +85,7 @@ export default function Viilee_modal(props) {
                 </h5>
                 <img src={uusi_ohj} alt="Harjoitusohjelman luominen" className='project_images' />
                 <p className='modal_p'>
-                    Valmentaja voi luoda uuden harjoitusohjelman lisäämällä ensin päivämäärät, 
+                    Valmentaja voi luoda uuden harjoitusohjelman lisäämällä ensin päivämäärät,
                     sen jälkeen klikkaamalla päivämäärää pääsee valmentaja lisäämään harjoituksen kuvauksen taulukkoon.
                 </p>
                 <img src={uusi_kuv} alt="Harjoitusohjelman luominen" className='project_images' />
@@ -94,9 +94,9 @@ export default function Viilee_modal(props) {
                 </h5>
                 <img src={figma_naky} alt="Harjoitusohjelman luominen" className='project_images' />
                 <p className='modal_p'>
-                Projekti oli erittäin mielenkiintoinen ja sitä tehdessä oppi paljon uusia asioita UX-Designistä. 
-                Vaikka Figma oli minulle tuttu koulun kursseilta sekä opinäytetyöstäni, oli sen käyttäminen projektin toteutuksessa hauskaa ja samalla siitä oppi paljon uusia ominaisuuksia. 
-                Yhteistyökumppani oli tyytyväinen projektin loppu tulokseen, jolloin projektia voidaan pitää onnistuneena.
+                    Projekti oli erittäin mielenkiintoinen ja sitä tehdessä oppi paljon uusia asioita UX-Designistä.
+                    Vaikka Figma oli minulle tuttu koulun kursseilta sekä opinäytetyöstäni, oli sen käyttäminen projektin toteutuksessa hauskaa ja samalla siitä oppi paljon uusia ominaisuuksia.
+                    Yhteistyökumppani oli tyytyväinen projektin loppu tulokseen, jolloin projektia voidaan pitää onnistuneena.
                 </p>
             </Modal.Body>
             <Modal.Footer>

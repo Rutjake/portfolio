@@ -1,21 +1,25 @@
 @media screen and (min-width: 991px) {
-    .center-card {
-      text-align: center;
-      width: 20rem;
-    }
-    .center-text {
-      text-align: center;
-    }
-    .topImage {
-      padding: 1vw;
-      max-width: 250px;
-      padding-top: 2vw;
-    }
+  .center-card {
+    text-align: center;
+    width: 20rem;
   }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .topImage {
+    padding: 1vw;
+    max-width: 250px;
+    padding-top: 2vw;
+  }
+}
+
 .card-style {
   margin: 1vw;
   box-shadow: 0px 0px 10px;
 }
+
 .logo {
   width: 100%;
   max-width: 65px;
@@ -28,12 +32,14 @@
     max-width: 40px;
     padding: 1vw;
   }
+
   .topImage {
     max-width: 150px;
     padding: 1vw;
     padding-top: 5vw;
   }
 }
+
 .cardTitle {
   color: rgb(212, 120, 0);
 }

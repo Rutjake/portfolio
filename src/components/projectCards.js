@@ -95,11 +95,12 @@ export default function Cards() {
                                             <img className="logo" src={Figma} alt="Figma" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
-                                        <Button size="sm" variant="primary" onClick={() => setModalShow(true)}>
+                                    <Col xs lg="2">
+                                        <Button size="sm" variant="success" onClick={() => setModalShow(true)}>
                                             Lue lisää
                                         </Button>
                                     </Col>
+
                                 </Row>
                             </Card.Body>
                         </Card>
@@ -128,7 +129,7 @@ export default function Cards() {
                                             <img className="logo" src={KivyMd} alt="KivyMd" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -164,7 +165,7 @@ export default function Cards() {
                                             <img className="logo" src={Open_W} alt="Open Weather" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -190,7 +191,7 @@ export default function Cards() {
                                             <img className="logo" src={KivyMd} alt="KivyMd" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -221,7 +222,7 @@ export default function Cards() {
                                             <img className="logo" src={Ux} alt="UX-Design Process" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -253,7 +254,7 @@ export default function Cards() {
                                         </OverlayTrigger>
 
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -289,7 +290,7 @@ export default function Cards() {
                                             <img className="logo" src={Boots} alt="Bootstrap" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -317,7 +318,7 @@ export default function Cards() {
                                         </OverlayTrigger>
 
                                     </Col>
-                                    <Col sm={{ offset: 10 }}>
+                                    <Col xs lg="2">
                                         <Card.Link href="#">Lue lisää</Card.Link>
                                     </Col>
                                 </Row>
@@ -327,6 +328,6 @@ export default function Cards() {
                 </Row>
             </motion.div>
         </motion.div>
-        
+
     )
 }

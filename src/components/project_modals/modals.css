@@ -2,7 +2,7 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-p {
+.modal_p {
     /*background-color: rgba(214, 214, 214, 0.75); */
     padding-inline: 5%;
     color: #000000;
@@ -14,7 +14,9 @@ p {
     padding-inline: 5%;
     margin-left: 2vw;
 }
-.subTitle {
+.modal_subTitle {
+    color: rgb(212, 120, 0);
+    padding-top: 2rem;
     padding-inline: 5%;
     margin: 2vw;
 }
@@ -22,4 +24,5 @@ p {
     max-height: 20rem;
     padding-inline: 5%;
     margin: 2vw;
+    max-width: 95%;
 }

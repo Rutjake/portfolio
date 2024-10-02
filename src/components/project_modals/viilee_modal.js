@@ -27,73 +27,73 @@ export default function Viilee_modal(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <p>
+                <p className='modal_p'>
                     Tavoitteena oli toteuttaa toiminnallinen prototyyppi yhteistyössä Team Viilee yleisurheilu harjoitusryhmän kanssa.
                     Sovelluksella pystyy hallinnoimaan harjoitusryhmän urheilijoiden harjoitusohjelmia sekä pitämään harjoituspäiväkirjaa.
                     Projektin idea syntyi keskustelussa Team Viileen valmentajan kanssa. Sovellusta määritellessä korostui, että siitä tulisi tehdä mahdollisimman yksinkertainen ja helppo käyttää, jotta sen käyttö ei ennen harjoitusta tai sen jälkeen vie liikaa aikaa.
                 </p>
-                <p >
+                <p className='modal_p'>
                     Yhteistyökumppanin kanssa sovellusta määritellessä tuli myös ilmi,
                     että nykyiset kaupalliset sovellukset sisältävät liikaa "sälää", joka vaikeuttaa ja hidastaa sovelluksessa operoimista.
                     Suunnittelun aikana pidettii katselmuksia yhteistyökumppanin kanssa, jolloin pystyttiin kartoittamaan onko sovelluksen määritelmät ymmärretty oikein.
                     Sovellusta suunnitellessa seurattiin Material Design suosituksia.
                 </p>
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Sisäänkirjautuminen
                 </h5>
                 <img src={viilee_login} alt="Login" className='project_images' />
-                <p>
+                <p className='modal_p'>
                     Sovelluksen kirjautuminen on tärkeä ominaisuus, jotta voidaan osoittaa käyttäjälle oikea tietokanta sekä ohjata käyttäjä joko urheilija tai valmentaja näkymään. Myös tunnuksen luominen onnistuu ennen sisäänkirjautumista, jolloin uuden urheilijan on helppo aloittaa sovelluksen käyttö.
                 </p>
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Urheilijan näkymä
                 </h5>
                 <img src={viilee_urheilija} alt="Urheilijan näkymä" className='project_images' />
-                <p>
+                <p className='modal_p'>
                     Urheilijan näkymä on hyvin yksinkertainen. Näkymässä pääsee vaihtamaan salasanan (rataskuvake yläkulmassa) sekä tarkastelemaan harjoitusohjelmaa. Halutessaan urheilija voi kirjautua ulos sovelluksesta.
                 </p>
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Valmentajan näkymä
                 </h5>
                 <img src={viilee_valmentaja} alt="Valmentajan näkymä" className='project_images' />
-                <p>
+                <p className='modal_p'>
                     Valmentajan näkymä on lähes samanlainen kuin urheilijan, mutta valmentaja tarvitsee muutaman ominaisuuden enemmän.
                     Valmentaja voi luoda urheilijalle joko uuden tai muokata olemassa olevaa harjoitusohjelmaa. 
                     Kun valmentaja haluaa tehdä uuden harjoitusohjelman, niin hän valitsee alasvetovalikosta urheilijan jolle kyseinen harjoitusohjelma tehdään.
                     Samoin menetellään myös kun halutaan tarkastella olemassa olevaa ohjelmaa.
                 </p>
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Urheilijan harjoitusohjelma
                 </h5>
                 <img src={viilee_ohjelma} alt="Urheilijan harjoitusohjelma" className='project_images' />
-                <p>
+                <p className='modal_p'>
                     Urheilijan harjoitusohjelma tulostuu taulukkona, jolloin se on hyvin selkeä ja helppo tulkita.
                     Urheilija voi lisätä kuvauksen kullekkin päivälle "Tehty" sarakkeeseen, jolloin valmentajan, 
                     kuin myös urheilijan on helppo seurata ohjelmaa.
                 </p>
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Harjoituksen kuvaus
                 </h5>
                 <img src={viilee_harj_kuvaus} alt="Harjoituksen kuvaus" className='project_images' />
-                <p>
+                <p className='modal_p'>
                     Jos harjoituksen kuvaus ei mahdu kokonaisena taulukko näkymään, voi urheilija klikata sitä, 
                     jolloin aukeaa uusi ikkuna josta urheilija näkee harjoituksen kuvauksen kokonaisuudessaan.
                     Myös valmentaja voi avata urheilijan kommentit uuteen ikkunaan.
                 </p>
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Uuden harjoitusohjelman luominen
                 </h5>
                 <img src={uusi_ohj} alt="Harjoitusohjelman luominen" className='project_images' />
-                <p>
+                <p className='modal_p'>
                     Valmentaja voi luoda uuden harjoitusohjelman lisäämällä ensin päivämäärät, 
                     sen jälkeen klikkaamalla päivämäärää pääsee valmentaja lisäämään harjoituksen kuvauksen taulukkoon.
                 </p>
                 <img src={uusi_kuv} alt="Harjoitusohjelman luominen" className='project_images' />
-                <h5 className='subTitle'>
+                <h5 className='modal_subTitle'>
                     Figman näkymä prototyypistä
                 </h5>
                 <img src={figma_naky} alt="Harjoitusohjelman luominen" className='project_images' />
-                <p>
+                <p className='modal_p'>
                 Projekti oli erittäin mielenkiintoinen ja sitä tehdessä oppi paljon uusia asioita UX-Designistä. 
                 Vaikka Figma oli minulle tuttu koulun kursseilta sekä opinäytetyöstäni, oli sen käyttäminen projektin toteutuksessa hauskaa ja samalla siitä oppi paljon uusia ominaisuuksia. 
                 Yhteistyökumppani oli tyytyväinen projektin loppu tulokseen, jolloin projektia voidaan pitää onnistuneena.

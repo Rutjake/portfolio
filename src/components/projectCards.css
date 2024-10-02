@@ -18,14 +18,14 @@
 }
 .logo {
   width: 100%;
-  max-width: 60px;
+  max-width: 65px;
   padding: 1vh;
 }
 
 @media screen and (max-width: 992px) {
   .logo {
     width: 100%;
-    max-width: 30px;
+    max-width: 40px;
     padding: 1vw;
   }
   .topImage {
@@ -37,5 +37,3 @@
 .cardTitle {
   color: rgb(212, 120, 0);
 }
-
-

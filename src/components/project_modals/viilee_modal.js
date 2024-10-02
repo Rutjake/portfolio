@@ -92,7 +92,7 @@ export default function Viilee_modal(props) {
                 <h5 className='modal_subTitle'>
                     Figman näkymä prototyypistä
                 </h5>
-                <img src={figma_naky} alt="Harjoitusohjelman luominen" className='project_images' />
+                <img src={figma_naky} alt="Figman näkymä prototyypistä" className='project_images' />
                 <p className='modal_p'>
                     Projekti oli erittäin mielenkiintoinen ja sitä tehdessä oppi paljon uusia asioita UX-Designistä.
                     Vaikka Figma oli minulle tuttu koulun kursseilta sekä opinäytetyöstäni, oli sen käyttäminen projektin toteutuksessa hauskaa ja samalla siitä oppi paljon uusia ominaisuuksia.

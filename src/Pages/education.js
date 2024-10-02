@@ -24,10 +24,10 @@ export default function EduPage() {
                     Tietojenkäsittelyn IT-Tradenomi. Digitaalisten palveluiden kehittäjä.
                 </p>
                 <p>
-                    Rakennusalan perustutkinto. Talonrakentaja 2009.
+                    Rakennusalan perustutkinto. Talonrakentaja.
                 </p>
                 <p>
-                    Tietokoneasentajan ammattitutkinto 2003.
+                    Tietokoneasentajan ammattitutkinto.
                 </p>
                 <h4 className='subTitle'>Sertifikaatit</h4>
                 <Sertis />

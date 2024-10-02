@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 
 // Modals
 import Viilee_modal from './project_modals/viilee_modal';
+import Poker_modal from './project_modals/poker_modal';
 
 // Top Images
 import Viilee from "./project_images/viilee-app/teamViileeThumb.png";
@@ -33,7 +34,9 @@ import Javas from "./logos/javascript.png";
 
 
 export default function Cards() {
-    const [modalShow, setModalShow] = React.useState(false);
+    /* Modal State */
+    const [modalViilee, setModalViilee] = React.useState(false);
+    const [modalPoker, setModalPoker] = React.useState(false);
 
     /* Animation Container */
     const containerVariants = {
@@ -96,18 +99,18 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalShow(true)}>
+                                        <Button size="sm" variant="success" onClick={() => setModalViilee(true)}>
                                             Lue lisää
                                         </Button>
+                                        <Viilee_modal
+                                            show={modalViilee}
+                                            onHide={() => setModalViilee(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Viilee_modal
-                        show={modalShow}
-                        onHide={() => setModalShow(false)}
-                    />
                     <Col xs={12} md={6}>
                         <Card className='card-style'>
                             <Col className='d-flex justify-content-center'>
@@ -129,7 +132,13 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                        <Card.Link href="#">Lue lisää</Card.Link>
+                                        <Button size="sm" variant="success" onClick={() => setModalPoker(true)}>
+                                            Lue lisää
+                                        </Button>
+                                        <Poker_modal
+                                            show={modalPoker}
+                                            onHide={() => setModalPoker(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>

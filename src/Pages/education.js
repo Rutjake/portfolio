@@ -21,7 +21,7 @@ export default function EduPage() {
             <div className='mainText'>
                 <h3 className='subTitle'>Koulutus</h3>
                 <p>
-                    IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut 2024.
+                    IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut Laurea 2024.
                 </p>
                 <p>
                 Opinnäytetyö: Digitaalisen palvelun käyttäjäpolun kehittäminen. Design Sprint.

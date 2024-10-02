@@ -42,8 +42,8 @@ export default function MainPage() {
                         Tervetuloa portfolio sivulleni.
                     </p>
                     <p>
-                        Olen kolmannen vuoden tietojenkäsittelyn opiskelija Laurea
-                        Ammattikorkeakoulussa IT-Tradenomi koulutuslinjalla.
+                        Olen Jarno, IT-Tradenomi Laurea
+                        Ammattikorkeakoulusta Tietojenkäsittelyn koulutuslinjalta.
                     </p>
                     <p>
                         Tein tämän sivun, jotta voin

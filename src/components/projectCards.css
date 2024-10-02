@@ -3,6 +3,14 @@
       text-align: center;
       width: 20rem;
     }
+    .center-text {
+      text-align: center;
+    }
+    .topImage {
+      padding: 1vw;
+      max-width: 250px;
+      padding-top: 2vw;
+    }
   }
 .card-style {
   margin: 1vw;
@@ -24,16 +32,6 @@
     max-width: 150px;
     padding: 1vw;
     padding-top: 5vw;
-  }
-}
-@media screen and (min-width: 991px) {
-  .center-text {
-    text-align: center;
-  }
-  .topImage {
-    padding: 1vw;
-    max-width: 250px;
-    padding-top: 2vw;
   }
 }
 .cardTitle {

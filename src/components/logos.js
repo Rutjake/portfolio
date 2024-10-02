@@ -27,8 +27,8 @@ import Miro from "./logos/miro.png";
 import Jira from "./logos/jira.png";
 import DevOps from "./logos/devops.png";
 import Scrum from "./logos/scrum.png";
-import m365 from "./logos/m365.png"
-
+import m365 from "./logos/m365.png";
+import DS from "./logos/ds.png";
 
 
 
@@ -95,15 +95,19 @@ export default function Logos() {
           </Row>
           <Row>
             <Col className="text-center">
+
               <h5 className="smallTitle">UX Design:</h5>
               <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">UX-Design Process</Tooltip>}>
                 <img src={Ux} alt="UX Design Process: Empathize, Define,
  and Ideate" className='logo' />
               </OverlayTrigger>
+              <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Design Sprint</Tooltip>}>
+                <img src={DS} alt="Design Sprint" className='logo' />
+              </OverlayTrigger>
               <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Figma</Tooltip>}>
                 <img src={Figma} alt="Figma" className='logo' />
               </OverlayTrigger>
-              <p>UX Design Process, Figma</p>
+              <p>UX Design Process, Design Sprint, Figma</p>
 
             </Col>
             <Col className="text-center">

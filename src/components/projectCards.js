@@ -105,7 +105,7 @@ export default function Cards() {
                             <Card.Title className='cardTitle'>JaggePokka</Card.Title>
                             <Card.Text>
                                 JaggePokan esikuvana toimii RAY:n 80 -luvun lopulla kehitetty ensimmäinen video pokerikone.
-                                JaggePokka on toteutettu Pythonilla ja siinä on käytetty KivyMd frameworkia.
+                                JaggePokka on toteutettu Pythonilla ja siinä on käytetty KivyMd frameworkia. Projektin tavoitteena oli harjotella ohjelmointia itsenäisesti dokumentaatiota hyödyntäen.
                             </Card.Text>
                             <Row>
                                 <Col>

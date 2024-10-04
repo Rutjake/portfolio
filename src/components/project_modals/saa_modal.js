@@ -41,7 +41,7 @@ export default function SaaModal(props) {
                 <p className='modal_p'>
                     Sovellukseen haettavat säätiedot valikoituivat sen perusteella, mitkä minusta ovat mielenkiintoisia ja relevantteja.
                     Sovellus kertoo haetun kaupungin tai kunnan nimen ja päivämäärän ennen haettuja säätietoja.
-                    Haettavat säätiedot ovat keli, lämpötila (myös miltä lämpötila tuntuu), kosteus prosentti ja tuulen nopeus.
+                    Haettavat säätiedot ovat keli, lämpötila, myös miltä lämpötila tuntuu, kosteus prosentti ja tuulen nopeus.
                 </p>
                 <h5 className='modal_subTitle'>
                     Säätiedot web näkymässä
@@ -66,11 +66,11 @@ export default function SaaModal(props) {
                 <p className='modal_p'>
                     Sovellusta voit kokeilla täällä:
                 </p>
-                <a href="https://rutjake.github.io/weather_app_build/" target='_blank' rel="noopener noreferrer">Sää Nyt</a>
+                <a href="https://rutjake.github.io/weather_app_build/" target='_blank' rel="noopener noreferrer" className='modal_link'>Sää Nyt</a>
                 <p className='modal_p'>
                     Linkki lähdekoodiin:
                 </p>
-                <a href="https://github.com/Rutjake/weather_app" target='_blank' rel="noopener noreferrer">Lähdekoodi GitHubissa</a>
+                <a href="https://github.com/Rutjake/weather_app" target='_blank' rel="noopener noreferrer" className='modal_link'>Lähdekoodi GitHubissa</a>
             </Modal.Body>
             <Modal.Footer>
                 <Button onClick={props.onHide}>Sulje</Button>

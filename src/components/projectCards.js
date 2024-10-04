@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import '../App.css';
 import './projectCards.css';
 import { Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
@@ -36,8 +37,9 @@ import Javas from "./logos/javascript.png";
 
 export default function Cards() {
     /* Modal State */
-    const [modalViilee, setModalViilee] = React.useState(false);
-    const [modalPoker, setModalPoker] = React.useState(false);
+    const [modalViilee, setModalViilee] = useState(false);
+    const [modalPoker, setModalPoker] = useState(false);
+    const [modalSaa, setModalSaa] = useState(false);
 
     /* Animation Container */
     const containerVariants = {
@@ -175,12 +177,12 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalPoker(true)}>
+                                        <Button size="sm" variant="success" onClick={() => setModalSaa(true)}>
                                             Lue lisää
                                         </Button>
                                         <SaaModal
-                                            show={modalPoker}
-                                            onHide={() => setModalPoker(false)}
+                                            show={modalSaa}
+                                            onHide={() => setModalSaa(false)}
                                         />
                                     </Col>
                                 </Row>

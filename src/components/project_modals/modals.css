@@ -40,9 +40,14 @@ a:link {
     margin: 2vw;
     color: rgb(45, 93, 121);
 }
+
 a:visited {
     color: rgb(45, 93, 121);
-  }
-  a:hover {
+}
+
+a:hover {
     color: rgb(1, 66, 26);
-  }
+}
+img {
+    border-radius: 8px;
+}

@@ -12,7 +12,7 @@ import uusi_ohj from './viileeImages/uusi_ohjelma.png';
 import uusi_kuv from './viileeImages/harjoitus_kuvaus.png';
 import figma_naky from './viileeImages/figma_nakyma.png';
 
-export default function Viilee_modal(props) {
+export default function ViileeModal(props) {
     return (
         <Modal
             {...props}

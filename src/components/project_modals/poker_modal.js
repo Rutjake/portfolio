@@ -2,23 +2,13 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './modals.css';
 
-// Viilee Images
-import viilee_login from './viileeImages/teamViileeLogin.png';
-import viilee_urheilija from './viileeImages/urheilijan_nakyma.png';
-import viilee_valmentaja from './viileeImages/valmentajan_nakyma.png';
-import viilee_ohjelma from './viileeImages/urheilijan_ohjelma.png';
-import viilee_harj_kuvaus from './viileeImages/alert_ikkuna.png';
-import uusi_ohj from './viileeImages/uusi_ohjelma.png';
-import uusi_kuv from './viileeImages/harjoitus_kuvaus.png';
-import figma_naky from './viileeImages/figma_nakyma.png';
-
 // Poker Images
 import poker_main from './pokerImages/poker_main.jpg';
 import poker_valittu from './pokerImages/valittu.jpg';
 import poker_tuplaus from './pokerImages/Tuplaus.jpg';
 import poker_db_voitit from './pokerImages/TuplausVoitit.jpg';
 
-export default function Viilee_modal(props) {
+export default function PokerModal(props) {
     return (
         <Modal
             {...props}

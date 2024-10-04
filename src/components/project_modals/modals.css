@@ -29,6 +29,20 @@ body {
     margin: 2vw;
     max-width: 95%;
 }
+
 ul {
     margin: 4vw;
 }
+
+a:link {
+    padding-inline: 5%;
+    border-radius: 10px;
+    margin: 2vw;
+    color: rgb(45, 93, 121);
+}
+a:visited {
+    color: rgb(45, 93, 121);
+  }
+  a:hover {
+    color: rgb(1, 66, 26);
+  }

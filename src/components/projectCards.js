@@ -7,8 +7,9 @@ import Button from 'react-bootstrap/Button';
 import { motion } from 'framer-motion';
 
 // Modals
-import Viilee_modal from './project_modals/viilee_modal';
-import Poker_modal from './project_modals/poker_modal';
+import ViileeModal from './project_modals/viilee_modal';
+import PokerModal from './project_modals/poker_modal';
+import SaaModal from './project_modals/saa_modal';
 
 // Top Images
 import Viilee from "./project_images/viilee-app/teamViileeThumb.png";
@@ -102,7 +103,7 @@ export default function Cards() {
                                         <Button size="sm" variant="success" onClick={() => setModalViilee(true)}>
                                             Lue lisää
                                         </Button>
-                                        <Viilee_modal
+                                        <ViileeModal
                                             show={modalViilee}
                                             onHide={() => setModalViilee(false)}
                                         />
@@ -135,7 +136,7 @@ export default function Cards() {
                                         <Button size="sm" variant="success" onClick={() => setModalPoker(true)}>
                                             Lue lisää
                                         </Button>
-                                        <Poker_modal
+                                        <PokerModal
                                             show={modalPoker}
                                             onHide={() => setModalPoker(false)}
                                         />
@@ -174,7 +175,13 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                        <Card.Link href="#">Lue lisää</Card.Link>
+                                        <Button size="sm" variant="success" onClick={() => setModalPoker(true)}>
+                                            Lue lisää
+                                        </Button>
+                                        <SaaModal
+                                            show={modalPoker}
+                                            onHide={() => setModalPoker(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>

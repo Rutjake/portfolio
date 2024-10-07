@@ -20,18 +20,20 @@ export default function EduPage() {
         >
             <div className='mainText'>
                 <h3 className='subTitle'>Koulutus</h3>
-                <p>
-                    IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut Laurea 2024.
-                </p>
-                <p>
-                Opinnäytetyö: Digitaalisen palvelun käyttäjäpolun kehittäminen. Design Sprint.
-                </p>
-                <p>
-                    Rakennusalan perustutkinto. Talonrakentaja.
-                </p>
-                <p>
-                    Tietokoneasentajan ammattitutkinto.
-                </p>
+                <ul>
+                    <li>
+                        IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut Laurea 2024.
+                    </li>
+                    <li>
+                        Opinnäytetyö: Digitaalisen palvelun käyttäjäpolun kehittäminen. Design Sprint.
+                    </li>
+                    <li>
+                        Rakennusalan perustutkinto. Talonrakentaja.
+                    </li>
+                    <li>
+                        Tietokoneasentajan ammattitutkinto.
+                    </li>
+                </ul>
                 <h4 className='subTitle'>Sertifikaatit</h4>
                 <Sertis />
 
@@ -40,6 +42,6 @@ export default function EduPage() {
                 <Logos />
 
             </div>
-        </motion.div>
+        </motion.div >
     );
 }

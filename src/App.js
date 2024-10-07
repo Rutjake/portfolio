@@ -11,6 +11,7 @@ import NavDesktop from './components/nav-desktop';
 import NavMobile from './components/nav-mobile';
 import EduPage from './Pages/education';
 import Projects from './Pages/projects';
+import ContactPage from './Pages/contact';
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
           } />
           <Route path="/projects" element={
             <Projects />
+          } />
+          <Route path="/contact" element={
+            <ContactPage />
           } />
 
         </Routes>

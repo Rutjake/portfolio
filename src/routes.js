@@ -20,7 +20,7 @@ export const routes = [
     },
     {
         title: "OTA YHTEYTTÄ",
-        href: "#",
+        path: "/contact",
         Icon: faEnvelope,
     },
 ]

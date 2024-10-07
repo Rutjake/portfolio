@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 import ViileeModal from './project_modals/viilee_modal';
 import PokerModal from './project_modals/poker_modal';
 import SaaModal from './project_modals/saa_modal';
+import MatikModal from './project_modals/matik_modal';
 
 // Top Images
 import Viilee from "./project_images/viilee-app/teamViileeThumb.png";
@@ -40,6 +41,7 @@ export default function Cards() {
     const [modalViilee, setModalViilee] = useState(false);
     const [modalPoker, setModalPoker] = useState(false);
     const [modalSaa, setModalSaa] = useState(false);
+    const [modalMatik, setModalMatik] = useState(false);
 
     /* Animation Container */
     const containerVariants = {
@@ -209,7 +211,13 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                        <Card.Link href="#">Lue lisää</Card.Link>
+                                        <Button size="sm" variant="success" onClick={() => setModalMatik(true)}>
+                                            Lue lisää
+                                        </Button>
+                                        <MatikModal
+                                            show={modalMatik}
+                                            onHide={() => setModalMatik(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>
@@ -344,7 +352,7 @@ export default function Cards() {
                     </Col>
                 </Row>
             </motion.div>
-        </motion.div>
+        </motion.div >
 
     )
 }

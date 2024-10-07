@@ -2,11 +2,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './modals.css';
 
-// Saa Images
+// Teatteri Images
 import esitykset from './elokuvatImages/Esitykset.JPG';
 import haku from './elokuvatImages/TeatteritHaku.JPG';
-import vaarin from './matikImages/Vaarin.JPG';
-import kerto from './matikImages/Kerto.JPG';
 
 export default function ElokModal(props) {
     return (

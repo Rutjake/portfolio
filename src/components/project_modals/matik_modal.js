@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './modals.css';
 
-// Saa Images
+// Matikka Images
 import matikEtusivu from './matikImages/Etusivu.JPG';
 import yhteen from './matikImages/Yhteen.JPG';
 import vaarin from './matikImages/Vaarin.JPG';

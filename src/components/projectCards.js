@@ -14,6 +14,7 @@ import SaaModal from './project_modals/saa_modal';
 import MatikModal from './project_modals/matik_modal';
 import RuokaModal from './project_modals/ruoka_modal';
 import ElokModal from './project_modals/elok_modal';
+import TurvaModal from './project_modals/turva_modal';
 
 // Top Images
 import Viilee from "./project_images/viilee-app/teamViileeThumb.png";
@@ -47,6 +48,7 @@ export default function Cards() {
     const [modalMatik, setModalMatik] = useState(false);
     const [modalRuoka, setModalRuoka] = useState(false);
     const [modalElok, setModalElok] = useState(false);
+    const [modalTurva, setModalTurva] = useState(false);
 
     /* Animation Container */
     const containerVariants = {
@@ -333,7 +335,13 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                        <Card.Link href="#">Lue lisää</Card.Link>
+                                    <Button size="sm" variant="success" onClick={() => setModalTurva(true)}>
+                                            Lue lisää
+                                        </Button>
+                                        <TurvaModal
+                                            show={modalTurva}
+                                            onHide={() => setModalTurva(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>

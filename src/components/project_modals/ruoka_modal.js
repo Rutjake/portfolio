@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './modals.css';
 
-// Saa Images
+// Ruoka Images
 import summary from './ruokaImages/SummaryEdited.jpg';
 import persona_mia from './ruokaImages/User_Mia_Persona.jpg';
 import persona_eeva from './ruokaImages/User_Eeva_Persona.jpg';

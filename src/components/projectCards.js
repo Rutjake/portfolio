@@ -13,6 +13,7 @@ import PokerModal from './project_modals/poker_modal';
 import SaaModal from './project_modals/saa_modal';
 import MatikModal from './project_modals/matik_modal';
 import RuokaModal from './project_modals/ruoka_modal';
+import ElokModal from './project_modals/elok_modal';
 
 // Top Images
 import Viilee from "./project_images/viilee-app/teamViileeThumb.png";
@@ -34,6 +35,7 @@ import Html from "./logos/HTML5.png";
 import Boots from "./logos/Bootstrap.png";
 import CSS from "./logos/CSS.png";
 import Javas from "./logos/javascript.png";
+import Lua from "./logos/lua.png";
 
 
 
@@ -44,6 +46,7 @@ export default function Cards() {
     const [modalSaa, setModalSaa] = useState(false);
     const [modalMatik, setModalMatik] = useState(false);
     const [modalRuoka, setModalRuoka] = useState(false);
+    const [modalElok, setModalElok] = useState(false);
 
     /* Animation Container */
     const containerVariants = {
@@ -288,7 +291,13 @@ export default function Cards() {
 
                                     </Col>
                                     <Col xs lg="2">
-                                        <Card.Link href="#">Lue lisää</Card.Link>
+                                        <Button size="sm" variant="success" onClick={() => setModalElok(true)}>
+                                            Lue lisää
+                                        </Button>
+                                        <ElokModal
+                                            show={modalElok}
+                                            onHide={() => setModalElok(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>
@@ -334,20 +343,17 @@ export default function Cards() {
                         <Card className='card-style'>
                             <Card.Img variant="top" src="holder.js/100px180" alt="Tämä Verkkosivu" />
                             <Card.Body>
-                                <Card.Title className='cardTitle'>Tämä Verkkosivu</Card.Title>
+                                <Card.Title className='cardTitle'>Groover</Card.Title>
                                 <Card.Text>
-                                    Tähän tulee tietoa tästä verkkosivusta.
+                                    Groover is an open source script for humanizing midi drums in the Reaper Midi editor.
                                 </Card.Text>
                                 <Row>
                                     <Col>
                                         <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Rect</Tooltip>}>
-                                            <img className="logo" src={R_React} alt="React" />
+                                            <img className="logo" src={Lua} alt="Lua" />
                                         </OverlayTrigger>
                                         <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Bootstrap</Tooltip>}>
-                                            <img className="logo" src={Boots} alt="Boostrap" />
-                                        </OverlayTrigger>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">CSS</Tooltip>}>
-                                            <img className="logo" src={CSS} alt="CSS" />
+                                            <img className="logo" src={Pyth} alt="Python" />
                                         </OverlayTrigger>
 
                                     </Col>

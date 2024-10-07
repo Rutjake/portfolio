@@ -204,29 +204,31 @@ export default function Cards() {
                     <Col xs={12} md={6}>
                         <Card className='card-style'>
                             <Col className='d-flex justify-content-center'>
-                                <Card.Img variant="top" src={Matikka} className='topImage' alt="MatikkaPeli" />
+                                <Card.Img variant="top" src={Groover} className='topImage' alt="Groover" />
                             </Col>
                             <Card.Body>
-                                <Card.Title className='cardTitle'>MatikkaPeli</Card.Title>
+                                <Card.Title className='cardTitle'>Groover</Card.Title>
                                 <Card.Text>
-                                    MatikkaPeli perustuu koulun kurssitehtävään, jonka pohjalta kehitin puhelin-sovelluksen lapseni pyynnöstä.
+                                    Groover on avoimen lähdekoodin skripti, jolla voi humanisoida midi rumpuja Reaperin Midi Editorissa.
+                                    Skriptin tarkoitus on nopeuttaa editointi prosessia.
                                 </Card.Text>
                                 <Row>
                                     <Col>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Python</Tooltip>}>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Javascript</Tooltip>}>
+                                            <img className="logo" src={Lua} alt="Lua" />
+                                        </OverlayTrigger>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
                                             <img className="logo" src={Pyth} alt="Python" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">KivyMD</Tooltip>}>
-                                            <img className="logo" src={KivyMd} alt="KivyMd" />
-                                        </OverlayTrigger>
+
                                     </Col>
                                     <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalMatik(true)}>
+                                        <Button size="sm" variant="success" onClick={() => setModalGroove(true)}>
                                             Lue lisää
                                         </Button>
-                                        <MatikModal
-                                            show={modalMatik}
-                                            onHide={() => setModalMatik(false)}
+                                        <GrooverModal
+                                            show={modalGroove}
+                                            onHide={() => setModalGroove(false)}
                                         />
                                     </Col>
                                 </Row>
@@ -273,35 +275,29 @@ export default function Cards() {
                     <Col xs={12} md={6}>
                         <Card className='card-style'>
                             <Col className='d-flex justify-content-center'>
-                                <Card.Img variant="top" src={Elokuvat} className='topImage' alt="Elokuvat pääkaupunkiseudulla tänään" />
+                                <Card.Img variant="top" src={Matikka} className='topImage' alt="MatikkaPeli" />
                             </Col>
                             <Card.Body>
-                                <Card.Title className='cardTitle'>Elokuvat pääkaupunkiseudulla tänään</Card.Title>
+                                <Card.Title className='cardTitle'>MatikkaPeli</Card.Title>
                                 <Card.Text>
-                                    "Elokuvat pääkaupunkiseudulla tänään" web-sovellus on toteutettu osana koulun kurssia.
-                                    Web-sovellus hakee Finnkinon alkavat näytökset nykyisestä hetkestä alkaen.
-                                    Projekti tehtiin parityönä.
+                                    MatikkaPeli perustuu koulun kurssitehtävään, jonka pohjalta kehitin puhelin-sovelluksen lapseni pyynnöstä.
                                 </Card.Text>
                                 <Row>
                                     <Col>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Javascript</Tooltip>}>
-                                            <img className="logo" src={Javas} alt="Javascript" />
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Python</Tooltip>}>
+                                            <img className="logo" src={Pyth} alt="Python" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
-                                            <img className="logo" src={Html} alt="HTML5" />
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">KivyMD</Tooltip>}>
+                                            <img className="logo" src={KivyMd} alt="KivyMd" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">CSS</Tooltip>}>
-                                            <img className="logo" src={CSS} alt="CSS" />
-                                        </OverlayTrigger>
-
                                     </Col>
                                     <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalElok(true)}>
+                                        <Button size="sm" variant="success" onClick={() => setModalMatik(true)}>
                                             Lue lisää
                                         </Button>
-                                        <ElokModal
-                                            show={modalElok}
-                                            onHide={() => setModalElok(false)}
+                                        <MatikModal
+                                            show={modalMatik}
+                                            onHide={() => setModalMatik(false)}
                                         />
                                     </Col>
                                 </Row>
@@ -353,31 +349,35 @@ export default function Cards() {
                     <Col xs={12} md={6}>
                         <Card className='card-style'>
                             <Col className='d-flex justify-content-center'>
-                                <Card.Img variant="top" src={Groover} className='topImage' alt="Groover" />
+                                <Card.Img variant="top" src={Elokuvat} className='topImage' alt="Elokuvat pääkaupunkiseudulla tänään" />
                             </Col>
                             <Card.Body>
-                                <Card.Title className='cardTitle'>Groover</Card.Title>
+                                <Card.Title className='cardTitle'>Elokuvat pääkaupunkiseudulla tänään</Card.Title>
                                 <Card.Text>
-                                    Groover on avoimen lähdekoodin skripti, jolla voi humanisoida midi rumpuja Reaperin Midi Editorissa.
-                                    Skriptin tarkoitus on nopeuttaa editointi prosessia.
+                                    "Elokuvat pääkaupunkiseudulla tänään" web-sovellus on toteutettu osana koulun kurssia.
+                                    Web-sovellus hakee Finnkinon alkavat näytökset nykyisestä hetkestä alkaen.
+                                    Projekti tehtiin parityönä.
                                 </Card.Text>
                                 <Row>
                                     <Col>
                                         <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Javascript</Tooltip>}>
-                                            <img className="logo" src={Lua} alt="Lua" />
+                                            <img className="logo" src={Javas} alt="Javascript" />
                                         </OverlayTrigger>
                                         <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
-                                            <img className="logo" src={Pyth} alt="Python" />
+                                            <img className="logo" src={Html} alt="HTML5" />
+                                        </OverlayTrigger>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">CSS</Tooltip>}>
+                                            <img className="logo" src={CSS} alt="CSS" />
                                         </OverlayTrigger>
 
                                     </Col>
                                     <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalGroove(true)}>
+                                        <Button size="sm" variant="success" onClick={() => setModalElok(true)}>
                                             Lue lisää
                                         </Button>
-                                        <GrooverModal
-                                            show={modalGroove}
-                                            onHide={() => setModalGroove(false)}
+                                        <ElokModal
+                                            show={modalElok}
+                                            onHide={() => setModalElok(false)}
                                         />
                                     </Col>
                                 </Row>

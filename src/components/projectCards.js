@@ -15,6 +15,7 @@ import MatikModal from './project_modals/matik_modal';
 import RuokaModal from './project_modals/ruoka_modal';
 import ElokModal from './project_modals/elok_modal';
 import TurvaModal from './project_modals/turva_modal';
+import GrooverModal from './project_modals/groover_modal'
 
 // Top Images
 import Viilee from "./project_images/viilee-app/teamViileeThumb.png";
@@ -24,6 +25,7 @@ import Saa from "./project_images/saa-nyt/saaThumb.JPG";
 import Matikka from "./project_images/matikka/matikThumb.JPG";
 import Turva from "./project_images/turva/TurvThumb.JPG";
 import Elokuvat from "./project_images/elokuvat/elokuvatThumb.JPG";
+import Groover from "./project_images/groover/GrooverGui.JPG";
 
 // Logos
 import Figma from "./logos/figma.png";
@@ -49,6 +51,7 @@ export default function Cards() {
     const [modalRuoka, setModalRuoka] = useState(false);
     const [modalElok, setModalElok] = useState(false);
     const [modalTurva, setModalTurva] = useState(false);
+    const [modalGroove, setModalGroove] = useState(false);
 
     /* Animation Container */
     const containerVariants = {
@@ -335,7 +338,7 @@ export default function Cards() {
                                         </OverlayTrigger>
                                     </Col>
                                     <Col xs lg="2">
-                                    <Button size="sm" variant="success" onClick={() => setModalTurva(true)}>
+                                        <Button size="sm" variant="success" onClick={() => setModalTurva(true)}>
                                             Lue lisää
                                         </Button>
                                         <TurvaModal
@@ -349,24 +352,33 @@ export default function Cards() {
                     </Col>
                     <Col xs={12} md={6}>
                         <Card className='card-style'>
-                            <Card.Img variant="top" src="holder.js/100px180" alt="Tämä Verkkosivu" />
+                            <Col className='d-flex justify-content-center'>
+                                <Card.Img variant="top" src={Groover} className='topImage' alt="Groover" />
+                            </Col>
                             <Card.Body>
                                 <Card.Title className='cardTitle'>Groover</Card.Title>
                                 <Card.Text>
-                                    Groover is an open source script for humanizing midi drums in the Reaper Midi editor.
+                                    Groover on avoimen lähdekoodin skripti, jolla voi humanisoida midi rumpuja Reaperin Midi Editorissa.
+                                    Skriptin tarkoitus on nopeuttaa editointi prosessia.
                                 </Card.Text>
                                 <Row>
                                     <Col>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Rect</Tooltip>}>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Javascript</Tooltip>}>
                                             <img className="logo" src={Lua} alt="Lua" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Bootstrap</Tooltip>}>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
                                             <img className="logo" src={Pyth} alt="Python" />
                                         </OverlayTrigger>
 
                                     </Col>
                                     <Col xs lg="2">
-                                        <Card.Link href="#">Lue lisää</Card.Link>
+                                        <Button size="sm" variant="success" onClick={() => setModalGroove(true)}>
+                                            Lue lisää
+                                        </Button>
+                                        <GrooverModal
+                                            show={modalGroove}
+                                            onHide={() => setModalGroove(false)}
+                                        />
                                     </Col>
                                 </Row>
                             </Card.Body>

@@ -41,7 +41,10 @@ export default function ContactPage() {
                     variants={variantsRight}
                 >
                     <p>
-                        <a href="https://linkedin.com/in/jarno-seppanen" target='_blank' rel="noopener noreferrer">Linked<FontAwesomeIcon icon={faLinkedin} /></a>
+                        Tällä hetkellä minuun voi olla yhteydessä Linkedinin kautta:
+                    </p>
+                    <p>
+                        <a href="https://linkedin.com/in/jarno-seppanen" target='_blank' rel="noopener noreferrer" style={{color: '#0077B5', fontSize: '1.1rem'}}>Linked<FontAwesomeIcon icon={faLinkedin} /></a>
                         <br />(Linkki aukeaa uuteen ikkunaan)
                     </p>
                 </motion.div>

@@ -25,10 +25,10 @@ body {
 
 .project_images {
     max-height: 20rem;
-    padding-inline: 5%;
-    margin: 2vw;
+    margin-inline: 15%;
+    margin-left: 5vw;
     max-width: 95%;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 ul {

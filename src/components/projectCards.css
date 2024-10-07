@@ -36,8 +36,8 @@
 
   .topImage {
     max-width: 150px;
-    padding: 1vw;
-    padding-top: 5vw;
+    margin: 2vw;
+    margin-top: 5vw;
   }
 }
 

@@ -40,6 +40,10 @@
   color: rgb(212, 120, 0);
 }
 
+a:link {
+  color: rgb(45, 93, 121);
+}
+
 a:visited {
   color: rgb(45, 93, 121);
 }

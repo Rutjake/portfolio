@@ -146,8 +146,8 @@ export default function Cards() {
                                             <img className="logo" src={KivyMd} alt="KivyMd" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalPoker(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalPoker(true)}>
                                             Lue lisää
                                         </Button>
                                         <PokerModal
@@ -188,8 +188,8 @@ export default function Cards() {
                                             <img className="logo" src={Open_W} alt="Open Weather" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalSaa(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalSaa(true)}>
                                             Lue lisää
                                         </Button>
                                         <SaaModal
@@ -222,8 +222,8 @@ export default function Cards() {
                                         </OverlayTrigger>
 
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalGroove(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalGroove(true)}>
                                             Lue lisää
                                         </Button>
                                         <GrooverModal
@@ -259,8 +259,8 @@ export default function Cards() {
                                             <img className="logo" src={Ux} alt="UX-Design Process" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalRuoka(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalRuoka(true)}>
                                             Lue lisää
                                         </Button>
                                         <RuokaModal
@@ -291,8 +291,8 @@ export default function Cards() {
                                             <img className="logo" src={KivyMd} alt="KivyMd" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalMatik(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalMatik(true)}>
                                             Lue lisää
                                         </Button>
                                         <MatikModal
@@ -333,8 +333,8 @@ export default function Cards() {
                                             <img className="logo" src={Boots} alt="Bootstrap" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalTurva(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalTurva(true)}>
                                             Lue lisää
                                         </Button>
                                         <TurvaModal
@@ -371,8 +371,8 @@ export default function Cards() {
                                         </OverlayTrigger>
 
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalElok(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalElok(true)}>
                                             Lue lisää
                                         </Button>
                                         <ElokModal

@@ -113,8 +113,8 @@ export default function Cards() {
                                             <img className="logo" src={Figma} alt="Figma" />
                                         </OverlayTrigger>
                                     </Col>
-                                    <Col xs lg="2">
-                                        <Button size="sm" variant="success" onClick={() => setModalViilee(true)}>
+                                    <Col xs lg="2" className="cardButtonDiv">
+                                        <Button className="cardButton" size="sm" variant="success" onClick={() => setModalViilee(true)}>
                                             Lue lisää
                                         </Button>
                                         <ViileeModal
@@ -214,10 +214,10 @@ export default function Cards() {
                                 </Card.Text>
                                 <Row>
                                     <Col>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Javascript</Tooltip>}>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Lua</Tooltip>}>
                                             <img className="logo" src={Lua} alt="Lua" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">HTML5</Tooltip>}>
+                                        <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Python</Tooltip>}>
                                             <img className="logo" src={Pyth} alt="Python" />
                                         </OverlayTrigger>
 

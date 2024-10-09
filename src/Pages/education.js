@@ -34,11 +34,10 @@ export default function EduPage() {
                         Tietokoneasentajan ammattitutkinto.
                     </li>
                 </ul>
+                <hr />
                 <h4 className='subTitle'>Sertifikaatit</h4>
                 <Sertis />
-
                 <h4 className='subTitle'>Taidot:</h4>
-
                 <Logos />
 
             </div>

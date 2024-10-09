@@ -44,6 +44,7 @@ export default function Sertis() {
                         </p>
                     </Col>
                 </Row>
+                <hr />
             </div>
         </motion.div>
 

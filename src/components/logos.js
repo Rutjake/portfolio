@@ -93,6 +93,7 @@ export default function Logos() {
               <p>Python, Javascript, C, C++, HTML5, CSS</p>
             </Col>
           </Row>
+          <hr />
           <Row>
             <Col className="text-center">
 
@@ -108,10 +109,9 @@ export default function Logos() {
                 <img src={Figma} alt="Figma" className='logo' />
               </OverlayTrigger>
               <p>UX Design Process, Design Sprint, Figma</p>
-
             </Col>
             <Col className="text-center">
-              <h5 className="smallTitle">Automaatio/ Ohjelmistotestaus RPA</h5>
+              <h5 className="smallTitle">Automaatio/ Ohjelmistotestaus</h5>
               <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Selenium</Tooltip>}>
                 <img src={Sele} alt="Selenium" className='logo' />
               </OverlayTrigger>
@@ -128,6 +128,7 @@ export default function Logos() {
       >
         <div>
           <Row>
+            <hr />
             <Col className="text-center">
               <h5 className="smallTitle">Muut taidot:</h5>
               <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Git</Tooltip>}>

@@ -15,6 +15,12 @@
 
 .cardButtonDiv {
   padding: 1vw;
+  align-content: center;
+}
+
+.cardButton {
+  float: right;
+  margin-right: 1vw;
 }
 
 @media screen and (min-width: 991px) {
@@ -49,6 +55,6 @@
   }
 
   .cardButton {
-    float: right;
+    margin-right: 3vw;
   }
 }

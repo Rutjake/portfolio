@@ -4,7 +4,7 @@ body {
 
 .modal_p {
     /*background-color: rgba(214, 214, 214, 0.75); */
-    padding-inline: 5%;
+    padding-inline: 3%;
     color: #000000;
     border-radius: 10px;
     margin: 2vw;
@@ -12,14 +12,14 @@ body {
 
 .modal_title {
     color: rgb(212, 120, 0);
-    padding-inline: 5%;
+    padding-inline: 3%;
     margin-left: 2vw;
 }
 
 .modal_subTitle {
     color: rgb(212, 120, 0);
     padding-top: 2rem;
-    padding-inline: 5%;
+    padding-inline: 3%;
     margin: 2vw;
 }
 
@@ -27,7 +27,7 @@ body {
     max-height: 20rem;
     margin-inline: 15%;
     margin-left: 5vw;
-    max-width: 95%;
+    max-width: 90%;
     border-radius: 12px;
 }
 
@@ -50,4 +50,9 @@ ol {
 
 .modal_link:hover {
     color: rgb(1, 66, 26);
+}
+@media screen and (min-width: 991px) {
+    .project_images {
+        margin-inline: 6.5%;
+    }
 }

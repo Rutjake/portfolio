@@ -40,7 +40,7 @@ export default function NavMobile() {
                                             <motion.li
                                                 initial={{ scale: 0, opacity: 0 }}
                                                 animate={{ scale: 1, opacity: 1 }}
-                                                exit={{ opacity: 0 }}
+                                                
                                                 transition={{
                                                     type: "spring",
                                                     stiffness: 250,

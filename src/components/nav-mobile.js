@@ -23,7 +23,6 @@ export default function NavMobile() {
                     <h3 className="mobile_title">JARNO</h3>
                     <Hamburger label="Valikko" color="rgb(45, 93, 121)" rounded toggled={isOpen} size={20} toggle={setOpen} />
                 </Col>
-                <hr className='menu_underline'/>
                 <Col className='nav_content'>
                     <AnimatePresence>
                         {isOpen && (

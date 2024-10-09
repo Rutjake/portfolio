@@ -44,7 +44,7 @@ export default function Sertis() {
                         </p>
                     </Col>
                 </Row>
-                <hr />
+                <hr className='mobile_hr'/>
             </div>
         </motion.div>
 

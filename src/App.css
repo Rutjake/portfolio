@@ -17,16 +17,9 @@
   margin: 2vw;
 }
 
-@media (max-width: 768px) {
-  .mainText {
-    margin-top: 2vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .subTitle {
   color: rgb(212, 120, 0);
+  padding-top: 4vw;
 }
 
 .underText {
@@ -50,4 +43,24 @@ a:visited {
 
 a:hover {
   color: rgb(212, 120, 0);
+}
+
+.mobile_hr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mainText {
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mobile_hr {
+    display: block;
+  }
+  .subTitle {
+    color: rgb(212, 120, 0);
+    padding-top: 0;
+  }
 }

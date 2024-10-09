@@ -93,7 +93,7 @@ export default function Logos() {
               <p>Python, Javascript, C, C++, HTML5, CSS</p>
             </Col>
           </Row>
-          <hr />
+          <hr className='mobile_hr'/>
           <Row>
             <Col className="text-center">
 
@@ -128,7 +128,7 @@ export default function Logos() {
       >
         <div>
           <Row>
-            <hr />
+            <hr className='mobile_hr'/>
             <Col className="text-center">
               <h5 className="smallTitle">Muut taidot:</h5>
               <OverlayTrigger placement='top' overlay={<Tooltip id="tooltip">Git</Tooltip>}>

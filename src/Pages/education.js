@@ -34,7 +34,7 @@ export default function EduPage() {
                         Tietokoneasentajan ammattitutkinto.
                     </li>
                 </ul>
-                <hr />
+                <hr className='mobile_hr' />
                 <h4 className='subTitle'>Sertifikaatit</h4>
                 <Sertis />
                 <h4 className='subTitle'>Taidot:</h4>

@@ -22,7 +22,7 @@ export default function EduPage() {
                 <h3 className='subTitle'>Koulutus</h3>
                 <ul>
                     <li>
-                        IT-Tradenomi. Digitaalisten palveluiden kehittäjä. Valmistunut Laurea 2024.
+                        Liiketalouden ammattikorkeakoulututkinto, tietojenkäsittely. IT-Tradenomi. Valmistunut Laurea 2024.
                     </li>
                     <li>
                         Opinnäytetyö: Digitaalisen palvelun käyttäjäpolun kehittäminen. Design Sprint.

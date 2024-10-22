@@ -21,12 +21,12 @@ export default function GrooverModal(props) {
             </Modal.Header>
             <Modal.Body>
                 <p className='modal_p'>
-                    Grooverin idea syntyi, kun mietin miten voisin nopeuttaa midi rumpujen editointia sekä miten voisin kotrolloida sitä samalla.
+                    Grooverin idea syntyi, kun mietin miten voisin nopeuttaa midi rumpujen editointia sekä miten voisin kontrolloida sitä samalla.
                     Samankaltaisia työkaluja on olemassa, mutta en ole ollut tyytyväinen niiden ominaisuuksiin.
                 </p>
 
                 <p className='modal_p'>
-                    Groover on skripti, jota ajetaan Reaper DAWissa. Yksin kertaisuudessaan Midi editorista valitaan halutut nuotit ja ajetaan skripti.
+                    Groover on skripti, jota ajetaan Reaper DAWissa. Yksinkertaisuudessaan Midi editorista valitaan halutut nuotit ja ajetaan skripti.
                 </p>
                 <h5 className='modal_subTitle'>
                     Käyttöliittymä

@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "path-to-regexp": ">=0.1.12",
-    "nanoid": ">=3.3.8",
     "@adobe/css-tools": "^4.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -16,14 +14,17 @@
     "font-awesome": "^4.7.0",
     "framer-motion": "^11.11.4",
     "hamburger-react": "^2.5.1",
+    "nanoid": ">=3.3.8",
     "nth-check": "^2.1.1",
+    "path-to-regexp": ">=0.1.12",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-responsive": "^10.0.0",
     "react-router-dom": "^6.26.1",
     "react-use": "^17.5.1",
-    "web-vitals": "^4.2.3"
+    "web-vitals": "^4.2.3",
+    "webpack-dev-server": "^5.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -57,9 +58,9 @@
     "react-scripts": "^5.0.1"
   },
   "overrides": {
-  "@svgr/webpack": "^6.5.1",
-  "svgo": "^3.0.2",
-  "postcss": "^8.4.38",
-  "nth-check": "^2.1.1"
-}
+    "@svgr/webpack": "^6.5.1",
+    "svgo": "^3.0.2",
+    "postcss": "^8.4.38",
+    "nth-check": "^2.1.1"
+  }
 }

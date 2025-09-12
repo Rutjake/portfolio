@@ -1,5 +1,5 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faUser, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faGraduationCap, faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export interface RouteItem {
   path: string;
@@ -9,7 +9,7 @@ export interface RouteItem {
 
 export const routes: RouteItem[] = [
   { path: '/', title: 'Etusivu', Icon: faHome },
-  { path: '/education', title: 'Koulutus', Icon: faUser },
-  { path: '/projects', title: 'Projektit', Icon: faBriefcase },
+  { path: '/education', title: 'Koulutus', Icon: faGraduationCap },
+  { path: '/projects', title: 'Projektit', Icon: faCodeBranch },
   { path: '/contact', title: 'Yhteystiedot', Icon: faEnvelope },
 ];

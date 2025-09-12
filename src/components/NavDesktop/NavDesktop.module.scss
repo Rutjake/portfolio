@@ -11,14 +11,13 @@
 }
 
 .navColList {
-    flex-grow: 1;
     display: flex;
     justify-content: flex-end;
 }
 
 .desktopIcon {
     margin-right: 0.5vw;
-    padding-top: 0.5vw;
+    padding-top: 0.1vw;
 }
 
 .desktopNavList {
@@ -36,6 +35,7 @@
     padding-top: 0.5vw;
     color: rgb(45, 93, 121);
     text-decoration: none;
+
 }
 
 .navTitle {

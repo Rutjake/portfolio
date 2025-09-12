@@ -1,6 +1,5 @@
 import './globals.css';
-import NavDesktop from '@/components/NavDesktop';
-import NavMobile from '@/components/NavMobile';
+import LayoutWrapper from '@/components/LayoutWrapper';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,16 +15,11 @@ export default function RootLayout({
   return (
     <html lang="fi">
       <body>
-        <nav className="navigation">
-            <NavDesktop />
-            <NavMobile />
-        </nav>
-        <header>
-          <h3 className='underText'>Ethical Hacker & Developer</h3>
-        </header>
-        <main>
-          {children}
-        </main>
+        <LayoutWrapper>
+          <main>
+            {children}
+          </main>
+        </LayoutWrapper>
       </body>
     </html>
   );

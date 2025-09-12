@@ -46,7 +46,6 @@ a:visited {
   color: var(--link-color);
 }
 
-/* Tässä ovat kaikki jaetut luokat, jotka käytetään useilla sivuilla. */
 .mainText {
   padding-inline: 5%;
   color: var(--foreground);

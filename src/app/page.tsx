@@ -43,7 +43,7 @@ export default function MainPage() {
                         Tervetuloa portfolio sivulleni.
                     </p>
                     <p>
-                        Olen Jarno, Full-stack kehittäjä sekä eettinen hakkeri.
+                        Olen Jarno, Ohjelmistokehittäjä sekä eettinen hakkeri.
                     </p>
                     <p>
                         Tein tämän sivun, jotta voin

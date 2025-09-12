@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useClickAway } from "react-use";
 import cls from './NavDesktop.module.scss';
 
-import { routes } from "../routes";
+import { routes } from "../../routes";
 
 export default function NavMobile() {
     const [isOpen, setOpen] = useState(false);

@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { routes } from '../routes';
+import { routes } from '../../routes';
 import cls from './NavDesktop.module.scss';
 
 export default function NavDesktop() {

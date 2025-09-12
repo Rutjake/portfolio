@@ -63,8 +63,12 @@ a:visited {
 .underText {
   text-align: center;
   padding-bottom: 1vw;
-  padding-top: 1vw;
   color: var(--accent-color);
+  padding-top: 5vw;
+  font-weight: 200;
+  @media screen and (max-width: 768px) {
+    padding-top: 15vw;
+  }
 }
 
 .smallTitle {
@@ -73,4 +77,11 @@ a:visited {
 
 .mobile_hr {
   display: none;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

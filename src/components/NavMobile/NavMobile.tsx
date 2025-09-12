@@ -6,7 +6,7 @@ import { Spin as Hamburger } from "hamburger-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useClickAway } from "react-use";
-import cls from './NavDesktop.module.scss';
+import cls from './NavMobile.module.scss';
 
 import { routes } from "../../routes";
 

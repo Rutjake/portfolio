@@ -9,7 +9,7 @@ export interface RouteItem {
 
 export const routes: RouteItem[] = [
   { path: '/', title: 'Etusivu', Icon: faHome },
-  { path: '/education', title: 'Koulutus', Icon: faGraduationCap },
+  { path: '/education', title: 'Koulutus/Työ', Icon: faGraduationCap },
   { path: '/projects', title: 'Projektit', Icon: faCodeBranch },
   { path: '/contact', title: 'Yhteystiedot', Icon: faEnvelope },
 ];

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import cls from './ProjectDetail.module.scss';
 import { getDictionary } from '@/lib/dictionary';
+import Description from './Description';
 
 
 interface GalleryItem {
@@ -13,7 +14,10 @@ interface GalleryItem {
       _type: string;
     };
   };
-  caption?: string;
+  caption?: {
+    fi?: string;
+    en?: string;
+  };
   _key?: string;
 }
 
@@ -37,8 +41,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
 
   if (!project) notFound();
 
-  const description = lang === 'en' ? project.descriptionEn : project.descriptionFi;
-
   return (
     <main className={cls.container}>
       <div className={cls.hero}>
@@ -54,8 +56,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           )}
         </div>
         <div className={cls.heroContent}>
-          <h1>{project.title}</h1>
-          <p className={cls.description}>{description}</p>
+          <h1 className={cls.title}>{project.title}</h1>
+          <Description value={lang === 'en' ? project.descriptionEn : project.descriptionFi} />
         </div>
       </div>
 
@@ -66,8 +68,16 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
             const asset = item.image?.asset || item;
 
             const imageUrl = asset
-              ? urlFor(asset).width(600).height(337).fit('crop').url()
+              ? urlFor(asset)
+                .width(600)
+                .fit('max')
+                .auto('format')
+                .url()
               : null;
+
+            const currentCaption = typeof item.caption === 'string'
+              ? item.caption
+              : (lang === 'en' ? item.caption?.en : item.caption?.fi);
 
             return (
               <div key={item._key || i} className={cls.episodeCard}>
@@ -77,17 +87,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
                       src={imageUrl}
                       width={600}
                       height={337}
-                      alt={item.caption || "Projektikuva"}
+                      alt={currentCaption || "Projektikuva"}
                     />
                   ) : (
                     <div className={cls.placeholderImg}>Ei kuvaa</div>
                   )}
                 </div>
                 <div className={cls.episodeText}>
-                  <span className={cls.episodeNumber}>
-                    {i + 1}. {dict.projects.step}
-                  </span>
-                  <p>{item.caption}</p>
+                  <p>{currentCaption}</p>
                 </div>
               </div>
             );

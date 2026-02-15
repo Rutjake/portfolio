@@ -6,7 +6,7 @@ export const project = defineType({
   type: 'document',
   fields: [
     defineField({ name: 'title', type: 'string', title: 'Otsikko' }),
-    
+
     defineField({
       name: 'slug',
       type: 'slug',
@@ -31,11 +31,22 @@ export const project = defineType({
         ],
       },
     }),
-    
+
     defineField({ name: 'image', type: 'image', title: 'Pääkansi (Hero)', options: { hotspot: true } }),
-    defineField({ name: 'descriptionFi', type: 'text', title: 'Kuvaus (FI)' }),
-    defineField({ name: 'descriptionEn', type: 'text', title: 'Kuvaus (EN)' }),
-    
+    defineField({
+      name: 'descriptionFi',
+      title: 'Kuvaus (FI)',
+      type: 'array',
+      of: [{ type: 'block' }]
+    }),
+
+    defineField({
+      name: 'descriptionEn',
+      title: 'Kuvaus (EN)',
+      type: 'array',
+      of: [{ type: 'block' }]
+    }),
+
     defineField({
       name: 'gallery',
       title: 'Kuvat',
@@ -47,8 +58,20 @@ export const project = defineType({
           fields: [
             {
               name: 'caption',
-              type: 'string',
-              title: 'Kuvan teksti / Jakson nimi',
+              title: 'Kuvateksti',
+              type: 'object',
+              fields: [
+                {
+                  name: 'fi',
+                  title: 'Suomi',
+                  type: 'string'
+                },
+                {
+                  name: 'en',
+                  title: 'Englanti',
+                  type: 'string'
+                }
+              ]
             }
           ]
         }

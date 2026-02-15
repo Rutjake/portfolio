@@ -1,0 +1,10 @@
+{
+  "heroTitle": "Full Stack & Security",
+  "heroDesc": "Code, Cybersecurity and UX Design.",
+  "heroButton": "Explore More",
+  "categories": {
+    "coding": "Coding Projects",
+    "cyber": "Cybersecurity",
+    "ux": "UX Design"
+  }
+}

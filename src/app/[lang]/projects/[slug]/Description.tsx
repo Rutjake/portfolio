@@ -7,9 +7,13 @@ import cls from './ProjectDetail.module.scss';
 
 interface DescriptionProps {
   value: PortableTextBlock[];
+  dict: {
+    readMore: string;
+    showLess: string;
+  };
 }
 
-export default function Description({ value }: DescriptionProps) {
+export default function Description({ value, dict }: DescriptionProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (!value || !Array.isArray(value)) return null;
@@ -29,7 +33,7 @@ export default function Description({ value }: DescriptionProps) {
           className={cls.readMoreBtn} 
           onClick={() => setIsExpanded(!isExpanded)}
         >
-          {isExpanded ? 'Näytä vähemmän' : 'Lue lisää'}
+          {isExpanded ? dict.showLess : dict.readMore}
         </button>
       )}
     </div>

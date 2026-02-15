@@ -14,6 +14,8 @@ export interface Dictionary {
   projects: {
     galleryTitle: string;
     step: string;
+    readMore: string;
+    showLess: string;
   };
 }
 

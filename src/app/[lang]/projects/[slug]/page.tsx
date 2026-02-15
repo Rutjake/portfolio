@@ -57,7 +57,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
         </div>
         <div className={cls.heroContent}>
           <h1 className={cls.title}>{project.title}</h1>
-          <Description value={lang === 'en' ? project.descriptionEn : project.descriptionFi} />
+          <Description
+            value={lang === 'en' ? project.descriptionEn : project.descriptionFi}
+            dict={{
+              readMore: dict.projects.readMore,
+              showLess: dict.projects.showLess
+            }}
+          />
         </div>
       </div>
 

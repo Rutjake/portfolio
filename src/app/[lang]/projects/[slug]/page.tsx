@@ -3,6 +3,7 @@ import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import cls from './ProjectDetail.module.scss';
+import { getDictionary } from '@/lib/dictionary';
 
 
 interface GalleryItem {
@@ -30,11 +31,11 @@ async function getProject(slug: string) {
 
 export default async function ProjectPage({ params }: { params: Promise<{ lang: string; slug: string }> }) {
   const { lang, slug } = await params;
+
+  const dict = await getDictionary(lang);
   const project = await getProject(slug);
 
-  if (!project) {
-    notFound();
-  }
+ if (!project) notFound();
 
   const description = lang === 'en' ? project.descriptionEn : project.descriptionFi;
 
@@ -59,7 +60,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
       </div>
 
       <section className={cls.gallerySection}>
-        <h2>Kuvat</h2>
+        <h2>{dict.projects.galleryTitle}</h2>
         <div className={cls.episodeGrid}>
           {project.gallery?.map((item: GalleryItem, i: number) => (
             <div key={item._key || i} className={cls.episodeCard}>

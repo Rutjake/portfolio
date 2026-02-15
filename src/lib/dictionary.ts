@@ -11,20 +11,30 @@ export interface Dictionary {
     cyber: string;
     ux: string;
   };
+  projects: {
+    galleryTitle: string;
+    step: string;
+  };
 }
 
 const dictionaries = {
-  fi: () => import('@/locales/fi/mainPage.json').then((module) => module.default as Dictionary),
-  en: () => import('@/locales/en/mainPage.json').then((module) => module.default as Dictionary),
+  fi: async () => {
+    const [main, proj] = await Promise.all([
+      import('@/locales/fi/mainPage.json').then((m) => m.default),
+      import('@/locales/fi/projects.json').then((m) => m.default),
+    ]);
+    return { ...main, projects: proj } as Dictionary;
+  },
+  en: async () => {
+    const [main, proj] = await Promise.all([
+      import('@/locales/en/mainPage.json').then((m) => m.default),
+      import('@/locales/en/projects.json').then((m) => m.default),
+    ]);
+    return { ...main, projects: proj } as Dictionary;
+  },
 }
 
 export const getDictionary = async (locale: string): Promise<Dictionary> => {
-  const loader = dictionaries[locale as Locale] 
-  
-  if (!loader) {
-    console.warn(`Dictionary for locale "${locale}" not found, falling back to "fi"`);
-    return dictionaries['fi']();
-  }
-
+  const loader = dictionaries[locale as Locale] || dictionaries['fi'];
   return loader();
 }

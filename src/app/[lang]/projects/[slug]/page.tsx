@@ -24,7 +24,7 @@ async function getProject(slug: string) {
     descriptionEn,
     image,
     slug,
-    gallery
+    gallery // Haetaan koko galleria-objekti raakana ilman purkamista
   }`;
   return await client.fetch(query, { slug });
 }
@@ -35,7 +35,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
   const dict = await getDictionary(lang);
   const project = await getProject(slug);
 
- if (!project) notFound();
+  if (!project) notFound();
 
   const description = lang === 'en' ? project.descriptionEn : project.descriptionFi;
 
@@ -62,22 +62,36 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
       <section className={cls.gallerySection}>
         <h2>{dict.projects.galleryTitle}</h2>
         <div className={cls.episodeGrid}>
-          {project.gallery?.map((item: GalleryItem, i: number) => (
-            <div key={item._key || i} className={cls.episodeCard}>
-              <div className={cls.imgWrapper}>
-                <Image
-                  src={urlFor(item.image).width(600).height(337).url()}
-                  width={600}
-                  height={337}
-                  alt={item.caption || "Projektikuva"}
-                />
+          {project.gallery?.map((item: GalleryItem, i: number) => {
+            const asset = item.image?.asset || item;
+
+            const imageUrl = asset
+              ? urlFor(asset).width(600).height(337).fit('crop').url()
+              : null;
+
+            return (
+              <div key={item._key || i} className={cls.episodeCard}>
+                <div className={cls.imgWrapper}>
+                  {imageUrl ? (
+                    <Image
+                      src={imageUrl}
+                      width={600}
+                      height={337}
+                      alt={item.caption || "Projektikuva"}
+                    />
+                  ) : (
+                    <div className={cls.placeholderImg}>Ei kuvaa</div>
+                  )}
+                </div>
+                <div className={cls.episodeText}>
+                  <span className={cls.episodeNumber}>
+                    {i + 1}. {dict.projects.step}
+                  </span>
+                  <p>{item.caption}</p>
+                </div>
               </div>
-              <div className={cls.episodeText}>
-                <span className={cls.episodeNumber}>{i + 1}. Vaihe</span>
-                <p>{item.caption}</p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     </main>

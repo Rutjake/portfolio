@@ -6,18 +6,20 @@ import cls from './page.module.scss';
 
 async function getProjects(): Promise<Project[]> {
   const query = `*[_type == "project"] {
-    title,
-    category,
-    image,
-    descriptionFi,
-    descriptionEn
-  }`;
+  _id,
+  title,
+  category,
+  image,
+  slug, // Hae koko slug-objekti
+  descriptionFi,
+  descriptionEn
+}`;
   return await client.fetch(query, {}, { next: { revalidate: 60 } });
 }
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  
+
   const dict = await getDictionary(lang as 'fi' | 'en');
   const allProjects = await getProjects();
 

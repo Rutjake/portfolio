@@ -1,0 +1,33 @@
+.container {
+  background-color: #141414;
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  height: 75vh; // Sama kuin oikeassa herossa
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+}
+
+.heroContent {
+  width: 100%;
+  max-width: 800px;
+}
+
+.gallerySection {
+  padding: 60px 4%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px 20px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    overflow: hidden;
+    gap: 12px;
+  }
+}

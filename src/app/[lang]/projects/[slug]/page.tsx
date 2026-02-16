@@ -27,7 +27,7 @@ async function getProject(slug: string) {
       "iconUrl": icon.asset->url
     }
   }`;
-  return await client.fetch(query, { slug }, { next: { revalidate: 60 } });
+  return await client.fetch(query, { slug }, { next: { revalidate: 0 } });
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ lang: string; slug: string }> }) {

@@ -19,5 +19,5 @@ export async function getResumeData() {
     }
   }`
 
-  return await client.fetch(query, {}, { next: { revalidate: 3600 } })
+  return await client.fetch(query, {}, { next: { revalidate: 0 } })
 }

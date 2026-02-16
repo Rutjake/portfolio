@@ -12,7 +12,7 @@ async function getProjects(): Promise<Project[]> {
   title,
   category,
   image,
-  slug, // Hae koko slug-objekti
+  slug,
   descriptionFi,
   descriptionEn
 }`;

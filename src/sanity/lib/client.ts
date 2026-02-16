@@ -5,7 +5,7 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true,
+  useCdn: false,
 })
 
 export async function getResumeData() {
@@ -19,5 +19,5 @@ export async function getResumeData() {
     }
   }`
 
-  return await client.fetch(query, {}, { next: { revalidate: 0 } })
+  return await client.fetch(query, {}, { next: { revalidate: 3600 } })
 }

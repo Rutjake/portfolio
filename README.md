@@ -1,3 +1,5 @@
+<img width="1263" height="723" alt="image" src="https://github.com/user-attachments/assets/543a4632-4a2e-4bb3-85df-286f048027f7" />
+
 # Portfolio Website
 
 A portfolio website built with **Next.js** and **Sanity CMS**, deployed on Netlify. This project uses a headless architecture where content is managed via Sanity and rendered through a Next.js frontend.

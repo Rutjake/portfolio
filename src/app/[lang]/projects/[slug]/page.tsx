@@ -1,4 +1,6 @@
 import { client } from '@/sanity/lib/client';
+import { Suspense } from 'react';
+import GallerySkeleton from '@/components/Skeleton/Skeleton';
 import { urlFor } from '@/sanity/lib/image';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -51,12 +53,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           />
         </div>
       </div>
-
-      <ProjectGallery 
-        gallery={project.gallery} 
-        lang={lang}
-        title={dict.projects.galleryTitle}
-      />
+      <Suspense fallback={<GallerySkeleton />}>
+        <ProjectGallery
+          gallery={project.gallery}
+          lang={lang}
+          title={dict.projects.galleryTitle}
+        />
+      </Suspense>
     </main>
   );
 }

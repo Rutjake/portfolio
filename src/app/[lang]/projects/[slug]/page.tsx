@@ -94,6 +94,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
                       width={600}
                       height={337}
                       alt={currentCaption || "Projektikuva"}
+                      sizes="(max-width: 768px) 80vw, 320px"
                     />
                   ) : (
                     <div className={cls.placeholderImg}>Ei kuvaa</div>

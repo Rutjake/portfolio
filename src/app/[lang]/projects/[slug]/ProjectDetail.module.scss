@@ -66,7 +66,7 @@
         -webkit-line-clamp: unset;
         line-clamp: unset;
         max-height: 2000px;
-        transition: max-height 0.8s ease-in-out; 
+        transition: max-height 0.8s ease-in-out;
       }
     }
 
@@ -122,14 +122,40 @@
 }
 
 .episodeGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 30px 20px;
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px 4% 20px 4%;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px 20px;
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
 }
 
 .episodeCard {
-  display: flex;
-  flex-direction: column;
+  min-width: 65%;
+  max-width: 250px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    min-width: 0;
+    max-width: none;
+    flex-shrink: 1;
+    scroll-snap-align: none;
+  }
 
   .imgWrapper {
     position: relative;
@@ -151,6 +177,7 @@
       object-fit: contain;
       display: block;
     }
+
   }
 
   .episodeText {

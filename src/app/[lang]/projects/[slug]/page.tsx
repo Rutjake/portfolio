@@ -9,6 +9,11 @@ import { getDictionary } from '@/lib/dictionary';
 import Description from './Description';
 import ProjectGallery from '@/components/ProjectGallery/ProjectGallery';
 
+interface Technology {
+  name: string;
+  iconUrl?: string;
+}
+
 async function getProject(slug: string) {
   const query = `*[_type == "project" && slug.current == $slug][0] {
     title,
@@ -16,7 +21,11 @@ async function getProject(slug: string) {
     descriptionEn,
     image,
     slug,
-    gallery // Haetaan koko galleria-objekti raakana ilman purkamista
+    gallery,
+    "technologies": technologies[]-> {
+      name,
+      "iconUrl": icon.asset->url
+    }
   }`;
   return await client.fetch(query, { slug });
 }
@@ -43,6 +52,25 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           )}
         </div>
         <div className={cls.heroContent}>
+          {project.technologies && project.technologies.length > 0 && (
+            <div className={cls.techIcons}>
+              {project.technologies?.map((tech: Technology, index: number) => (
+                tech.iconUrl && (
+                  <div key={index} className={cls.iconWrapper}>
+                    <Image
+                      src={tech.iconUrl}
+                      alt={tech.name || 'technology'}
+                      width={32}
+                      height={32}
+                      className={cls.techIcon}
+                    />
+                    <span className={cls.tooltip}>{tech.name}</span>
+                  </div>
+                )
+              ))}
+            </div>
+          )}
+
           <h1 className={cls.title}>{project.title}</h1>
           <Description
             value={lang === 'en' ? project.descriptionEn : project.descriptionFi}

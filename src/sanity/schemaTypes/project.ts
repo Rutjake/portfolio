@@ -46,6 +46,13 @@ export const project = defineType({
       type: 'array',
       of: [{ type: 'block' }]
     }),
+    
+    defineField({
+      name: 'technologies',
+      title: 'Technologies Used',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'skill' }] }]
+    }),
 
     defineField({
       name: 'gallery',

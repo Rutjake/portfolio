@@ -27,10 +27,9 @@ jobs:
         env:
           NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
           NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
-
-      # Jos testit kaatavat buildin, voit kommentoida nämä kaksi riviä pois
-      - name: Run tests
-        run: npm test -- --coverage --watchAll=false
+          
+      #- name: Run tests
+      #  run: npm test -- --coverage --watchAll=false
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master

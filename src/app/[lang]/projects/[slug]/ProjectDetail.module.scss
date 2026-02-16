@@ -169,18 +169,20 @@
 
     ul,
     ol {
-      padding-left: 0;
+      padding-left: 1.2rem;
       margin-left: 0;
       margin-bottom: 1.5rem;
+      list-style-position: outside;
 
       li {
         margin-bottom: 0.5rem;
-        padding-left: 0;
       }
     }
 
     h3 {
       margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    ;
     }
 
     p {

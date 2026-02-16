@@ -3,13 +3,15 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image'; 
+import { SanityImageSource } from '@sanity/asset-utils';
 import ImageModal from '../ImageModal/ImageModal';
 import cls from './ProjectGallery.module.scss';
 
-// Määritellään tyypit, jotta TypeScript ei herjaa
 interface GalleryItem {
   _key: string;
-  image?: { asset: any };
+  image?: { 
+    asset: SanityImageSource;
+  };
   caption?: string | { fi: string; en: string };
 }
 

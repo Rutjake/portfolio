@@ -17,22 +17,38 @@ export interface Dictionary {
     readMore: string;
     showLess: string;
   };
+  infoModal: {
+    experience: string;
+    education: string;
+    certifications: string;
+    skills: string;
+  };
 }
 
 const dictionaries = {
   fi: async () => {
-    const [main, proj] = await Promise.all([
+    const [main, proj, info] = await Promise.all([
       import('@/locales/fi/mainPage.json').then((m) => m.default),
       import('@/locales/fi/projects.json').then((m) => m.default),
+      import('@/locales/fi/infoModal.json').then((m) => m.default),
     ]);
-    return { ...main, projects: proj } as Dictionary;
+    return { 
+      ...main, 
+      projects: proj, 
+      infoModal: info 
+    } as Dictionary;
   },
   en: async () => {
-    const [main, proj] = await Promise.all([
+    const [main, proj, info] = await Promise.all([
       import('@/locales/en/mainPage.json').then((m) => m.default),
       import('@/locales/en/projects.json').then((m) => m.default),
+      import('@/locales/en/infoModal.json').then((m) => m.default),
     ]);
-    return { ...main, projects: proj } as Dictionary;
+    return { 
+      ...main, 
+      projects: proj, 
+      infoModal: info 
+    } as Dictionary;
   },
 }
 

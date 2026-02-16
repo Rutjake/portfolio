@@ -20,6 +20,12 @@ interface Dictionary {
     cyber: string;
     ux: string;
   };
+  infoModal: {
+    experience: string;
+    education: string;
+    certifications: string;
+    skills: string;
+  };
 }
 
 interface HeroProps {
@@ -54,6 +60,7 @@ export default function Hero({ dict, resumeData }: HeroProps) {
       {isModalOpen && (
         <InfoModal 
           data={resumeData} 
+          dict={dict}
           onClose={() => setIsModalOpen(false)} 
         />
       )}

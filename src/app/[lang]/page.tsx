@@ -25,7 +25,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   const dict = await getDictionary(lang as 'fi' | 'en');
   const allProjects = await getProjects();
 
-  const resumeData = await client.fetch(RESUME_QUERY, {}, { next: { revalidate: 0 } });
+  const resumeData = await client.fetch(RESUME_QUERY, { lang }, { next: { revalidate: 0 } });
 
   const codingProjects = allProjects.filter((p) => p.category === 'koodi');
   const cyberProjects = allProjects.filter((p) => p.category === 'kyber');

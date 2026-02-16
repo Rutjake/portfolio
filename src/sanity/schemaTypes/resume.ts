@@ -3,18 +3,12 @@ const resumeSchema = {
   title: 'Resume',
   type: 'document',
   fields: [
-    { 
-      name: 'experience', 
-      type: 'array', 
-      title: 'Experience', 
-      of: [{ type: 'block' }] 
-    },
-    { 
-      name: 'education', 
-      type: 'array', 
-      title: 'Education', 
-      of: [{ type: 'block' }] 
-    },
+    { name: 'experienceFi', type: 'array', title: 'Työkokemus (FI)', of: [{ type: 'block' }] },
+    { name: 'experienceEn', type: 'array', title: 'Experience (EN)', of: [{ type: 'block' }] },
+
+    { name: 'educationFi', type: 'array', title: 'Koulutus (FI)', of: [{ type: 'block' }] },
+    { name: 'educationEn', type: 'array', title: 'Education (EN)', of: [{ type: 'block' }] },
+
     {
       name: 'certifications',
       type: 'array',
@@ -22,14 +16,10 @@ const resumeSchema = {
       of: [{
         type: 'object',
         fields: [
-          { name: 'title', type: 'string', title: 'Title' },
+          { name: 'titleFi', type: 'string', title: 'Otsikko (FI)' },
+          { name: 'titleEn', type: 'string', title: 'Title (EN)' },
           { name: 'issuer', type: 'string', title: 'Issuer' },
-          { 
-            name: 'icon', 
-            type: 'image', 
-            title: 'Icon',
-            options: { hotspot: true }
-          }
+          { name: 'icon', type: 'image', title: 'Icon' }
         ]
       }]
     },
@@ -37,10 +27,7 @@ const resumeSchema = {
       name: 'skills',
       type: 'array',
       title: 'Skills & Tools',
-      of: [{ 
-        type: 'reference', 
-        to: [{ type: 'skill' }] 
-      }]
+      of: [{ type: 'reference', to: [{ type: 'skill' }] }]
     },
   ]
 };

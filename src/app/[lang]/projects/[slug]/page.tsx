@@ -52,6 +52,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           )}
         </div>
         <div className={cls.heroContent}>
+          <h1 className={cls.title}>{project.title}</h1>
           {project.technologies && project.technologies.length > 0 && (
             <div className={cls.techIcons}>
               {project.technologies?.map((tech: Technology, index: number) => (
@@ -70,8 +71,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
               ))}
             </div>
           )}
-
-          <h1 className={cls.title}>{project.title}</h1>
           <Description
             value={lang === 'en' ? project.descriptionEn : project.descriptionFi}
             dict={{

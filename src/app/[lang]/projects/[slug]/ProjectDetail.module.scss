@@ -19,7 +19,7 @@
 
   @media (max-width: 768px) {
     min-height: 60vh;
-    padding-top: 80px;
+    padding-top: 110px;
     padding-bottom: 60px;
   }
 
@@ -54,7 +54,7 @@
     .techIcons {
       display: flex;
       gap: 0.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
 
       .iconWrapper {
         position: relative;
@@ -180,7 +180,7 @@
     }
 
     h3 {
-      margin-top: 1rem;
+      margin-top: 0.2rem;
       margin-bottom: 0.5rem;
     ;
     }

@@ -31,6 +31,9 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
 
+  scroll-snap-type: x mandatory; 
+  scroll-padding: 0 4%;
+
   &::-webkit-scrollbar {
     display: none;
   }

@@ -17,6 +17,7 @@ interface Technology {
 async function getProject(slug: string) {
   const query = `*[_type == "project" && slug.current == $slug][0] {
     title,
+    titleEn,
     descriptionFi,
     descriptionEn,
     image,
@@ -52,7 +53,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ lang: 
           )}
         </div>
         <div className={cls.heroContent}>
-          <h1 className={cls.title}>{project.title}</h1>
+          <h1 className={cls.title}>{lang === 'en' ? project.titleEn : project.title}</h1>
           {project.technologies && project.technologies.length > 0 && (
             <div className={cls.techIcons}>
               {project.technologies?.map((tech: Technology, index: number) => (

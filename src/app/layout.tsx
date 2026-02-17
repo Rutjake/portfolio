@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 const barlowCondensed = Barlow_Condensed({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
+  variable: '--font-barlow',
   subsets: ['latin'],
   display: 'swap',
 });

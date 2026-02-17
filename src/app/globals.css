@@ -33,6 +33,10 @@ body {
   margin: 0;
 }
 
+button, input, select, textarea {
+  font-family: inherit;
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;

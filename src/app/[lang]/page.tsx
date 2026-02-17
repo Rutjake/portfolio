@@ -9,6 +9,7 @@ import cls from './page.module.scss';
 async function getProjects(): Promise<Project[]> {
   const query = `*[_type == "project"] {
   _id,
+  order,
   title,
   titleEn,
   category,

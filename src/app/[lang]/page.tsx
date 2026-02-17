@@ -10,6 +10,7 @@ async function getProjects(): Promise<Project[]> {
   const query = `*[_type == "project"] {
   _id,
   title,
+  titleEn,
   category,
   image,
   slug,

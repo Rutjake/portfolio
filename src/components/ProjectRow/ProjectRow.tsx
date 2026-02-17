@@ -24,13 +24,18 @@ export default function ProjectRow({ title, projects }: ProjectRowProps) {
         {projects.map((project, i) => {
           const projectSlug = project.slug?.current || '';
           const projectHref = `/${lang}/projects/${projectSlug}`;
+
+          const displayTitle = lang === 'en' && project.titleEn 
+            ? project.titleEn 
+            : project.title;
+            
           return (
             <Link href={projectHref} key={projectSlug || i} className={cls.projectLink}>
               <div key={i} className={cls.projectCard}>
                 {project.image ? (
                   <Image
                     src={urlFor(project.image).width(400).height(225).fit('crop').url()}
-                    alt={project.title}
+                    alt={displayTitle}
                     width={400}
                     height={225}
                     className={cls.cardImage}
@@ -39,11 +44,11 @@ export default function ProjectRow({ title, projects }: ProjectRowProps) {
                   />
                 ) : (
                   <div className={cls.placeholder}>
-                    <span>{project.title}</span>
+                    <span>{displayTitle}</span>
                   </div>
                 )}
                 <div className={cls.overlay}>
-                  <p>{project.title}</p>
+                  <p>{displayTitle}</p>
                 </div>
               </div>
             </Link>

@@ -5,7 +5,9 @@ export const project = defineType({
   title: 'Projekti',
   type: 'document',
   fields: [
-    defineField({ name: 'title', type: 'string', title: 'Otsikko' }),
+    defineField({ name: 'title', type: 'string', title: 'Otsikko (FI)' }),
+
+    defineField({ name: 'titleEn', type: 'string', title: 'Otsikko (EN)' }),
 
     defineField({
       name: 'slug',
@@ -46,7 +48,7 @@ export const project = defineType({
       type: 'array',
       of: [{ type: 'block' }]
     }),
-    
+
     defineField({
       name: 'technologies',
       title: 'Technologies Used',

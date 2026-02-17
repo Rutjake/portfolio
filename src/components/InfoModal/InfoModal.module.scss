@@ -113,9 +113,9 @@
 }
 
 .closeBtn {
-  position: sticky;
-  top: 0;
-  right: 0px;
+  position: absolute;
+  top: 50px;
+  right: 60px;
   float: right;
   margin-right: -10px;
   background: none;

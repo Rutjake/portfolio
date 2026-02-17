@@ -5,6 +5,14 @@ export const project = defineType({
   title: 'Projekti',
   type: 'document',
   fields: [
+
+    defineField({ 
+      name: 'order', 
+      title: 'Järjestysnumero', 
+      type: 'number',
+      description: 'Pienin numero näytetään ensin.'
+    }),
+    
     defineField({ name: 'title', type: 'string', title: 'Otsikko (FI)' }),
 
     defineField({ name: 'titleEn', type: 'string', title: 'Otsikko (EN)' }),

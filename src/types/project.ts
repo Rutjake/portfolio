@@ -14,6 +14,7 @@ interface SanityImage {
 
 export interface Project {
   _id: string;
+  order?: number;
   title: string;
   titleEn: string;
   category: string;

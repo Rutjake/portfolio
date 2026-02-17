@@ -20,6 +20,12 @@ export default function ProjectRow({ title, projects }: ProjectRowProps) {
 
   if (!projects || projects.length === 0) return null;
 
+  const sortedProjects = [...projects].sort((a, b) => {
+    const orderA = a.order ?? 999;
+    const orderB = b.order ?? 999;
+    return orderA - orderB;
+  });
+
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
@@ -44,8 +50,8 @@ export default function ProjectRow({ title, projects }: ProjectRowProps) {
           ‹
         </button>
 
-        <div className={cls.scrollContainer}>
-          {projects.map((project, i) => {
+        <div className={cls.scrollContainer} ref={scrollRef}> 
+          {sortedProjects.map((project, i) => {
             const projectSlug = project.slug?.current || '';
             const projectHref = `/${lang}/projects/${projectSlug}`;
 

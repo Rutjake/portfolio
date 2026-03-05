@@ -17,6 +17,7 @@
     "@sanity/vision": "^4.22.0",
     "framer-motion": "^12.23.12",
     "hamburger-react": "^2.5.2",
+    "immutable": "^5.1.5",
     "minimatch": "^10.2.3",
     "next": "^16.1.6",
     "next-sanity": "^11.6.12",
@@ -24,6 +25,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-use": "^17.6.0",
+    "rollup": "^4.59.0",
     "sanity": "^4.22.0",
     "sass": "^1.92.1",
     "styled-components": "^6.3.9"

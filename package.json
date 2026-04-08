@@ -21,7 +21,7 @@
     "hamburger-react": "^2.5.2",
     "immutable": "^5.1.5",
     "minimatch": "^10.2.3",
-    "next": "^16.1.7",
+    "next": "^16.2.2",
     "next-sanity": "^11.6.12",
     "node-forge": "^1.4.0",
     "picomatch": "^4.0.4",
@@ -41,7 +41,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.5.3",
+    "eslint-config-next": "15.5.14",
     "typescript": "^5"
   }
 }

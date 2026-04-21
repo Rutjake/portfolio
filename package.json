@@ -30,7 +30,7 @@
     "react-use": "^17.6.0",
     "rollup": "^4.60.1",
     "sanity": "^4.22.0",
-    "sass": "^1.92.1",
+    "sass": "^1.99.0",
     "styled-components": "^6.4.0",
     "undici": "^6.24.1",
     "yaml": "^2.8.3"
